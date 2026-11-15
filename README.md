@@ -95,9 +95,3 @@ python3 -m http.server 8765
 ```
 
 then open http://localhost:8765.
-
-## Deploying
-
-In the GitHub repo: **Settings → Pages → Build and deployment → Deploy from a branch → `main` / root**.
-The site will be at `https://post-bayesian-repository.github.io/post_bayes_repo/`.
-(To serve it at `https://post-bayesian-repository.github.io/` instead, rename the repo to `post-bayesian-repository.github.io`.)
