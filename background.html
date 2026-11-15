@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Background · Post-Bayesian Repository</title>
+  <meta name="description" content="An introduction to post-Bayesian inference: Gibbs (generalised) posteriors, predictively oriented posteriors, martingale posteriors and PAC-Bayes.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="assets/style.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\\(',right:'\\)',display:false}]});
+            var t = location.hash && document.getElementById(decodeURIComponent(location.hash.slice(1)));
+            if (t) document.fonts.ready.then(function () { t.scrollIntoView(); });"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="inner">
+      <a class="brand" href="index.html">Post-Bayesian Repository</a>
+      <div class="nav-links">
+        <a href="index.html">Papers</a>
+        <a href="background.html" class="active">Background</a>
+        <a href="resources.html">Resources</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="with-toc">
+    <article>
+    <h1>Background</h1>
+    <p>
+      Post-Bayesian methods quantify uncertainty in much the same way a Bayesian would, but without relying on
+      Bayes' theorem and the brittle assumptions that justify it. This page gives an overview of the four families
+      used to tag papers in the repository, the problems each one addresses, and the mathematical tools that keep
+      appearing across them.
+    </p>
+
+    <h2 id="why">Why go beyond Bayes?</h2>
+    <p>Given a model \(p(x_{1:n}\mid\theta)\) and a prior \(\pi(\theta)\), Bayes' theorem gives the posterior</p>
+    $$\pi_n(\theta\mid x_{1:n}) \;=\; \frac{p(x_{1:n}\mid\theta)\,\pi(\theta)}{\int p(x_{1:n}\mid\theta)\,\pi(\theta)\,\mathrm d\theta}.$$
+    <p>
+      Its appeal is that it averages over models instead of picking one, quantifies uncertainty about \(\theta\), and
+      lets domain expertise enter through the prior. These benefits are only guaranteed to be meaningful under three assumptions:
+    </p>
+    <ul>
+      <li><strong>(A1) The model is well specified</strong>: \(x_{1:n}\sim p(x_{1:n}\mid\theta^\ast)\) for some \(\theta^\ast\in\Theta\).</li>
+      <li><strong>(A2) The prior is well specified</strong>: \(\pi(\theta)\) honestly encodes uncertainty about the true state of the world.</li>
+      <li><strong>(A3) The posterior is computable</strong> in practice, exactly or to a good approximation.</li>
+    </ul>
+    <p>
+      In classical scientific modelling, e.g. a hand-built regression of house prices on pollutants with
+      expert-elicited priors, these assumptions are at least plausible. In modern Bayesian machine learning they rarely
+      are: the model is a flexible black box chosen for convenience, the prior is a default like \(\mathcal N(0, I)\), and
+      the posterior is only coarsely approximated. Post-Bayesian methods ask whether we can
+      <em>keep the benefits of Bayesianism without these assumptions</em>. Formally, they consider the wider space of belief updates
+    </p>
+    $$\big\{\mathcal B : \mathcal P(\Theta) \times \mathcal X^n \times \mathcal H \to \mathcal P(\Theta)\big\},$$
+    <p>
+      which map a prior, data and hyperparameters to a posterior. Bayes' rule is just one element of this space.
+    </p>
+    <p>
+      The classical foundations do not settle the matter either. Savage's axioms and de Finetti's representation
+      theorem are often read as proving that rational inference must be Bayesian. But they concern priors over
+      “states of the world” and (typically infinite-dimensional) exchangeable laws. They do not concern a finite-dimensional
+      \(\theta\) in a model we know to be wrong, which is how Bayesian inference is actually practised.
+    </p>
+
+    <h2 id="map">A map of the field</h2>
+    <p>The repository groups post-Bayesian work into four classes:</p>
+    <div class="table-wrap">
+      <table class="papers">
+        <thead><tr><th>Class</th><th>Key idea</th><th>Mainly addresses</th></tr></thead>
+        <tbody>
+          <tr><td><span class="chip gb">Generalised Bayes</span></td><td>Replace the likelihood in Bayes' rule with a loss function, giving a Gibbs posterior</td><td>(A1), (A3)</td></tr>
+          <tr><td><span class="chip pro">Predictively Oriented Posteriors</span></td><td>Score the posterior predictive itself, so uncertainty reflects predictive ability and misspecification</td><td>(A1), prediction</td></tr>
+          <tr><td><span class="chip mp">Martingale Posteriors</span></td><td>Model uncertainty about unseen data via predictive resampling, instead of a prior over parameters</td><td>(A1), (A2)</td></tr>
+          <tr><td><span class="chip pac">PAC-Bayes</span></td><td>Frequentist generalisation bounds for randomised estimators; justify and design posteriors</td><td>Theory for all of the above</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="gb">Generalised Bayes</h2>
+    <p>
+      Generalised Bayes keeps the prior and the form of Bayes' rule, but replaces the negative log-likelihood with a
+      loss function \(\mathsf L(x_{1:n}, p_\theta)\) chosen for the task at hand. The result is the
+      <strong>Gibbs (generalised) posterior</strong>
+    </p>
+    $$\pi^{\mathsf L}_n(\theta\mid x_{1:n}) \;=\; \frac{\exp\{-\lambda\,\mathsf L(x_{1:n},p_\theta)\}\,\pi(\theta)}{\int \exp\{-\lambda\,\mathsf L(x_{1:n},p_\theta)\}\,\pi(\theta)\,\mathrm d\theta},$$
+    <p>
+      where \(\lambda&gt;0\) is a learning rate. The standard posterior is the special case
+      \(\mathsf L = -\log p(x_{1:n}\mid\theta)\), \(\lambda = 1\). For additive losses \(\mathsf L = \sum_i \ell(x_i, p_\theta)\),
+      <a href="https://doi.org/10.1111/rssb.12158">Bissiri, Holmes &amp; Walker (2016)</a> show this is the coherent way to update
+      beliefs about the loss minimiser, giving the sequential update \(\pi^{\mathsf L}_n \propto \pi^{\mathsf L}_{n-1}\,e^{-\lambda \ell(x_n,p_\theta)}\).
+      The loss need not come from a probabilistic model at all. Equivalently, by the Donsker–Varadhan variational formula,
+      the Gibbs posterior is the distribution that best trades off expected loss against closeness to the prior:
+    </p>
+    $$\pi^{\mathsf L}_n \;=\; \arg\min_{q\in\mathcal P(\Theta)} \Big\{\mathbb E_{\theta\sim q}\big[\mathsf L(x_{1:n},p_\theta)\big] + \tfrac{1}{\lambda}\,\mathrm{KL}(q,\pi)\Big\}.$$
+
+    <h3 id="power">The log-loss with \(\lambda\neq 1\): power posteriors</h3>
+    <p>
+      Keeping the log-likelihood but changing \(\lambda\) gives power (fractional, tempered) posteriors,
+      \(\pi^{(\lambda)}_n \propto p(x_{1:n}\mid\theta)^{\lambda}\,\pi(\theta)\), which trade off prior against data.
+      Choosing \(\lambda&lt;1\) (e.g. with <a href="https://doi.org/10.1007/978-3-642-34106-9_16">Grünwald's <em>SafeBayes</em></a>)
+      can improve finite-sample risk under misspecification, and makes the posterior amenable to PAC-Bayes analysis
+      (see <a href="#pac">below</a>). <em>Coarsened</em> posteriors (<a href="https://arxiv.org/abs/1506.06101">Miller &amp; Dunson, 2019</a>)
+      are approximately power posteriors with \(\lambda=\alpha/(\alpha+n)\approx \alpha/n\). But any fixed \(\lambda\) is eventually washed out by the
+      data: the predictive converges to the plug-in predictive \(p_{\hat\theta_n}\)
+      (<a href="https://arxiv.org/abs/2408.08806">McLatchie, Fong, Frazier &amp; Knoblauch, 2025</a>). Changing \(\lambda\) alone can improve
+      parameter uncertainty, but it neither fixes prediction under misspecification nor gives robustness. For that, the loss itself has to change.
+    </p>
+    <p>
+      For a general loss, \(\lambda\) still controls how fast the posterior concentrates, and therefore whether its credible sets are calibrated.
+      Proposals for setting it include information matching (<a href="https://arxiv.org/abs/1701.08515">Holmes &amp; Walker, 2017</a>) and
+      bootstrap calibration (<a href="https://arxiv.org/abs/1509.00922">Syring &amp; Martin, 2019</a>). <a href="https://arxiv.org/abs/2012.11349">Wu &amp; Martin (2023)</a>
+      compare the options.
+    </p>
+
+    <h3 id="robust">Robust losses</h3>
+    <p>
+      The main reason to change the loss is Huber-type robustness to contamination \(P_{\varepsilon,x} = (1-\varepsilon)P + \varepsilon\,\delta_x\).
+      View the loss as a functional of the empirical measure \(P_n=\frac1n\sum_i\delta_{x_i}\), and the posterior density at each \(\theta\) as a
+      statistical functional. The key condition for global bias-robustness is then that the loss is uniformly insensitive to outliers:
+    </p>
+    $$\sup_{\theta\in\Theta}\,\sup_{x}\,\Big|\tfrac{\mathrm d}{\mathrm d\varepsilon}\,\mathsf L(P_{\varepsilon,x}, p_\theta)\big|_{\varepsilon=0}\Big| \;&lt;\; \infty.$$
+    <p>
+      The log-likelihood violates this for almost every model, including the Gaussian. Robust losses are typically built as
+      estimators of robust divergences \(D(q, p_\theta)\): \(\beta\)- and \(\gamma\)-divergences, MMD, and (weighted) Stein discrepancies.
+    </p>
+
+    <h3 id="gb-computation">Computation</h3>
+    <p>
+      Many robust losses involve intractable integrals under \(p_\theta\). Plugging simulation-based loss estimates into MCMC gives
+      pseudo-marginal schemes that target the wrong distribution unless the number of simulations grows like \(n\). Zig-Zag samplers
+      avoid this because they only need unbiased gradient estimates (<a href="https://arxiv.org/abs/2404.15649">Frazier et al., 2024</a>).
+      Alternatively, a loss can be chosen for tractability: weighted score-matching / Stein losses are quadratic in the natural parameter of
+      exponential families, giving <em>conjugate</em> robust posteriors that are as fast as standard Bayes, e.g.
+      <a href="https://arxiv.org/abs/2311.00463">robust and conjugate Gaussian processes</a>.
+    </p>
+    <p><a href="index.html?cls=Generalised%20Bayes">→ Generalised Bayes papers</a></p>
+
+    <h2 id="pro">Predictively oriented posteriors</h2>
+    <p>
+      Bayes posteriors are fragile for prediction under misspecification. As \(n\to\infty\) the posterior collapses to a point mass at
+      \(\hat\theta_n\) (typically at rate \(\sqrt n\)), so the posterior predictive
+      \(p_{\pi_n}=\int p_\theta\,\mathrm d\pi_n(\theta)\) collapses onto the plug-in predictive \(p_{\hat\theta_n}\). This is sensible if the model is
+      correct, since no uncertainty is left once all the data have been seen. If the model is wrong it makes little sense, because some
+      uncertainty is irreducible. Power and Gibbs posteriors behave the same way.
+    </p>
+    <p>
+      The key observation is that all Gibbs posteriors, including Bayes, minimise the <em>averaged score of the model</em>.
+      <a href="https://arxiv.org/abs/2510.01915">Predictively oriented (PrO) posteriors</a> (McLatchie, Chérief-Abdellatif, Frazier &amp; Knoblauch, 2025)
+      instead minimise the <em>score of the averaged model</em>. For a scoring rule \(S\) and predictive \(P_Q=\int P_\theta\,\mathrm dQ(\theta)\):
+    </p>
+    $$\text{Gibbs:}\quad Q^\dagger_n = \arg\min_{Q\in\mathcal P(\Theta)}\Big\{\frac{\lambda_n}{n}\sum_{i=1}^n \int S(P_\theta,x_i)\,\mathrm dQ(\theta) + \mathrm{KL}(Q,\Pi)\Big\},$$
+    $$\text{PrO:}\quad Q_n = \arg\min_{Q\in\mathcal P(\Theta)}\Big\{\frac{\lambda_n}{n}\sum_{i=1}^n S(P_Q,x_i) + \mathrm{KL}(Q,\Pi)\Big\}.$$
+    <p>
+      With the log score \(S(P,x)=-\log p(x)\) and \(\lambda_n=n\), the left-hand problem is exactly Bayes, while the right-hand problem
+      scores the mixture \(-\log\int p_\theta(x_i)\,\mathrm dQ(\theta)\). Other proper scoring rules, such as the kernel score (MMD), work too. Consequences:
+    </p>
+    <ul>
+      <li><strong>Adaptivity.</strong> If the model can recover the data-generating process, PrO posteriors concentrate like Bayes and Gibbs posteriors. Under non-trivial misspecification they do <em>not</em> collapse in parameter space; they collapse in <em>predictive</em> space, towards the mixture over the model class closest to the truth.</li>
+      <li><strong>Predictive dominance.</strong> Up to logarithmic factors they converge to the predictively optimal model average \(Q^\ast=\arg\min_Q \mathbb E_{P_0}[S(P_Q,X)]\), strictly dominating Bayes and Gibbs predictives under non-trivial misspecification and matching them otherwise.</li>
+      <li><strong>Interpretable uncertainty.</strong> The irreducible spread of \(Q_n\) measures the degree of model misspecification: parameter uncertainty becomes a function of predictive performance.</li>
+    </ul>
+    <p>
+      <strong>Computation.</strong> The objective is non-linear in \(Q\), so standard MCMC does not apply. Instead it is minimised by a
+      Wasserstein gradient flow, implemented as an interacting particle system (mean-field Langevin dynamics):
+    </p>
+    $$\mathrm d\theta_j = -\Big(\nabla V(\theta_j) + \frac{\lambda_1}{N}\sum_{i=1}^N \nabla_1\kappa(\theta_j,\theta_i)\Big)\mathrm dt + \sqrt{2\lambda_2}\,\mathrm dB_j.$$
+    <p class="muted">
+      This is the form taken for the kernel (MMD) score, whose objective is quadratic in \(Q\):
+      \(\int V\,\mathrm dQ+\tfrac{\lambda_1}{2}\iint\kappa\,\mathrm dQ\,\mathrm dQ+\lambda_2\int q\log q\). Here \(N\) particles
+      \(\theta_1,\dots,\theta_N\) approximate \(Q_n\), the potential \(V\) collects the data term and \(-\log\pi\), the pairwise interaction
+      \(\kappa(\theta,\theta')\propto\iint k\,\mathrm dP_\theta\,\mathrm dP_{\theta'}\) comes from scoring the mixture, and \(B_j\) are independent
+      Brownian motions. Other scores, such as the log score, lead to more general mean-field drifts.
+    </p>
+    <p>
+      The PAC-Bayesian precursors PAC\(^2\)-Bayes (<a href="https://arxiv.org/abs/1912.08335">Masegosa, 2020</a>) and PAC\(^m\)-Bayes (<a href="https://arxiv.org/abs/2010.09629">Morningstar et al., 2022</a>) target similar objectives
+      for Bayesian deep learning, but do not define or study the PrO posterior as a general inferential method.
+    </p>
+    <p><a href="index.html?cls=Predictively%20Oriented%20Posteriors">→ PrO posterior papers</a></p>
+
+    <h2 id="mp">Martingale posteriors</h2>
+    <p>
+      Sometimes it is easier to reason about uncertainty directly on the data. <a href="https://arxiv.org/abs/2103.15671">Fong, Holmes &amp; Walker (2023)</a>
+      treat the <em>missing observations</em> as the source of uncertainty: given the whole population, the quantity of interest would be known
+      exactly. Inference proceeds by forward simulation, or <strong>predictive resampling</strong>:
+    </p>
+    $$X_{n+i}\sim p_{n+i-1}\big(\cdot\mid x_{1:n}, X_{n+1:n+i-1}\big),\qquad i=1,2,\dots$$
+    $$\theta_\infty = \arg\min_{\theta\in\Theta}\int \ell(z,\theta)\,\mathrm dF_\infty(z),\qquad F_\infty=\lim_{N\to\infty}\frac1N\Big(\sum_{i=1}^n\delta_{x_i}+\sum_{i=n+1}^{N}\delta_{X_i}\Big).$$
+    <p>The distribution of \(\theta_\infty\) is the martingale posterior. There are two “dials”:</p>
+    <ul>
+      <li><strong>Dial 1</strong>: the sequence of one-step-ahead predictives \(\{p_n(z\mid x_{1:n})\}\) models data uncertainty, in place of a prior over parameters.</li>
+      <li><strong>Dial 2</strong>: a general loss \(\ell\) summarises the information in the (imputed) population, in place of a likelihood.</li>
+    </ul>
+    <p>For \(\theta_\infty\) to be well defined the predictives \(p_N\) (equivalently, the empirical distribution of the completed sequence) must
+      converge almost surely. A martingale condition on the predictives guarantees this, via the martingale convergence theorem:</p>
+    $$\mathbb E_{X_{n+1}\sim p_n(\cdot\mid x_{1:n})}\big[\,p_{n+1}(z\mid x_{1:n}, X_{n+1})\,\big] \;=\; p_n(z\mid x_{1:n}).$$
+    <p>
+      Choosing the Bayesian posterior predictive \(p(x_{n+1}\mid x_{1:n})=\int p(x_{n+1}\mid\theta)\,\pi_n(\theta\mid x_{1:n})\,\mathrm d\theta\) and taking
+      \(\theta_\infty\) to be the limit of the posterior means recovers exactly the Bayes posterior, \(\theta_\infty\sim\pi_n(\theta\mid x_{1:n})\), by Doob's theorem. The empirical (Pólya-urn) predictive gives the Bayesian bootstrap.
+      Other predictives, such as copula-based recursive updates, give fast nonparametric inference without ever writing down a prior.
+      An active direction is to use modern predictive models such as foundation models, diffusion models or TabPFN-style networks as the predictive.
+    </p>
+    <p><a href="index.html?cls=Martingale%20Posteriors">→ Martingale posterior papers</a></p>
+
+    <h2 id="pac">PAC-Bayes</h2>
+    <p>
+      PAC-Bayes provides generalisation bounds with non-uniform control over hypotheses. Despite the name it is part of
+      frequentist statistical learning theory. Its value here is that it lets us study post-Bayesian objects, and choose
+      between them, using frequentist arguments. With data \(X_i\sim P_0\), empirical risk \(R_n(\theta)=\frac1n\sum_i\ell(x_i,\theta)\)
+      and population risk \(R(\theta)=\mathbb E_{P_0}[\ell(X,\theta)]\), a basic bound reads as follows. If the “Hoeffding assumption”
+      \(\mathbb E_{P_0}\!\int e^{\lambda[R(\theta)-R_n(\theta)]}\,\mathrm d\pi(\theta)\le e^{\lambda^2C/n}\) holds, then with probability at least \(1-\delta\),
+      simultaneously for all \(q\in\mathcal P(\Theta)\),
+    </p>
+    $$\int R\,\mathrm dq \;\le\; \int R_n\,\mathrm dq + \frac{\lambda C}{n} + \frac{\mathrm{KL}(q,\pi) + \log(1/\delta)}{\lambda}.$$
+    <p>
+      The right-hand side is minimised by the Gibbs posterior \(q\propto \pi\,e^{-\lambda R_n}\). Here \(\lambda\) multiplies the
+      <em>average</em> risk, so in the notation of the Gibbs posterior above the learning rate is \(\lambda/n\) (with the log loss, \(\lambda=n\)
+      recovers Bayes). Choosing \(\lambda\asymp\sqrt n\) makes the gap between population and empirical risk \(O(1/\sqrt n)\) for any fixed \(q\)
+      with \(\mathrm{KL}(q,\pi)=O(1)\). The main lessons:
+    </p>
+    <ul>
+      <li>Priors are meaningful beyond Bayes' rule, as distributional regularisers.</li>
+      <li>Bayes and Gibbs posteriors achieve frequentist generalisation guarantees in situations where point estimators cannot.</li>
+      <li>From this perspective there is nothing special about Bayes' rule.</li>
+    </ul>
+    <p>
+      The Hoeffding assumption fails for \(-\log p_\theta\) in most interesting models, Gaussians included, so the basic bound says
+      nothing about standard Bayes. Power posteriors fix this. For \(0&lt;\lambda&lt;1\), <a href="https://arxiv.org/abs/1706.09293">Alquier &amp; Ridgway (2020)</a> bound the expected
+      Rényi divergence \(D_\lambda(p_\theta, p_0)\) under \(\pi^{(\lambda)}_n\) by
+      \(\inf_q\big\{\tfrac{\lambda}{1-\lambda}\int \mathrm{KL}(p_0,p_\theta)\,\mathrm dq + \tfrac{\mathrm{KL}(q,\pi)}{n(1-\lambda)}\big\}\),
+      which concentrates under very mild conditions, including settings where the \(\lambda=1\) posterior does not.
+      PAC-Bayes arguments also give posterior concentration rates for Gibbs posteriors via a prior-mass condition, complementing
+      Bernstein–von Mises results (<a href="https://arxiv.org/abs/1907.09611">Miller, 2021</a>). A good entry point is Alquier's
+      <a href="https://arxiv.org/abs/2110.11216">User-friendly introduction to PAC-Bayes bounds</a>.
+    </p>
+    <p><a href="index.html?cls=PAC-Bayes">→ PAC-Bayes papers</a></p>
+
+    <h2 id="tools">Recurring mathematical tools</h2>
+    <ul>
+      <li><strong>Representation theorems.</strong> Donsker–Varadhan (\(\log\int e^{h}\,\mathrm d\pi=\sup_q\{\int h\,\mathrm dq-\mathrm{KL}(q,\pi)\}\)) gives the variational form of Bayes and Gibbs posteriors. De Finetti's theorem underlies the predictive view. Doob's theorem links predictive resampling to the Bayes posterior.</li>
+      <li><strong>PAC-Bayes bounds.</strong> Treat posteriors as randomised estimators with frequentist guarantees, including posteriors that are only specified implicitly (e.g. PrO).</li>
+      <li><strong>Asymptotics.</strong> Posterior concentration and Bernstein–von Mises theorems for generalised posteriors show that new posteriors behave sensibly.</li>
+      <li><strong>Gradient flows.</strong> Wasserstein gradient flows and interacting particle systems compute optimisation-centric posteriors.</li>
+    </ul>
+
+    <div class="callout">
+      This overview draws heavily on Jeremias Knoblauch's masterclass <em>Post-Bayesian Methods</em> (Lancaster, June 2026).
+      Recordings of related talks are on the <a href="resources.html">Resources</a> page. Corrections and additions are welcome
+      via <a href="https://github.com/Post-Bayesian-Repository/post_bayes_repo">GitHub</a>.
+    </div>
+    </article>
+
+    <aside class="toc">
+      <nav aria-label="On this page">
+        <div class="toc-title">On this page</div>
+        <ol>
+          <li><a href="#why">Why go beyond Bayes?</a></li>
+          <li><a href="#map">A map of the field</a></li>
+          <li><a href="#gb">Generalised Bayes</a></li>
+          <li><a href="#pro">Predictively oriented posteriors</a></li>
+          <li><a href="#mp">Martingale posteriors</a></li>
+          <li><a href="#pac">PAC-Bayes</a></li>
+          <li><a href="#tools">Mathematical tools</a></li>
+        </ol>
+      </nav>
+    </aside>
+  </main>
+
+  <footer>Post-Bayesian Repository · maintained on <a href="https://github.com/Post-Bayesian-Repository/post_bayes_repo">GitHub</a></footer>
+</body>
+</html>

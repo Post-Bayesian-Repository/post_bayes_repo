@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Post-Bayesian Repository</title>
+  <meta name="description" content="A curated, searchable list of papers on post-Bayesian inference: generalised Bayes, predictively oriented posteriors, martingale posteriors and PAC-Bayes.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="inner">
+      <a class="brand" href="index.html">Post-Bayesian Repository</a>
+      <div class="nav-links">
+        <a href="index.html" class="active">Papers</a>
+        <a href="background.html">Background</a>
+        <a href="resources.html">Resources</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="intro">
+      <div class="intro-text">
+        <h1>Post-Bayesian Repository</h1>
+        <p>
+          A curated list of papers on <strong>post-Bayesian inference</strong>: methods that quantify uncertainty
+          much as a Bayesian would, but without relying on Bayes' rule and its assumptions. They are typically used
+          when the model is misspecified, the prior is a default rather than a genuine belief, the posterior is too
+          costly to compute, or prediction rather than parameter recovery is the goal.
+        </p>
+        <p>
+          Papers are tagged by class and contribution style. Search by title, author or venue, use the filters to
+          narrow the list, and click a column header to sort. Clicking a tag filters the table by it.
+          New to the area? Start with the <a href="background.html">Background</a> page.
+        </p>
+        <div class="chips">
+          <a class="chip gb" href="?cls=Generalised+Bayes">Generalised Bayes</a>
+          <a class="chip pro" href="?cls=Predictively+Oriented+Posteriors">Predictively Oriented Posteriors</a>
+          <a class="chip mp" href="?cls=Martingale+Posteriors">Martingale Posteriors</a>
+          <a class="chip pac" href="?cls=PAC-Bayes">PAC-Bayes</a>
+        </div>
+      </div>
+      <figure class="intro-figure">
+        <img src="assets/img/wheatfield.jpg" width="900" height="705"
+             alt="Van Gogh's painting of a golden wheat field under swirling clouds, with tall dark cypress trees on the right">
+        <figcaption>Vincent van Gogh, <em>Wheat Field with Cypresses</em> (1889)</figcaption>
+      </figure>
+    </section>
+
+    <div class="home-panels">
+      <section class="panel" aria-labelledby="discover-title">
+        <h2 id="discover-title">Discover</h2>
+        <p class="panel-sub">A paper from the repository, chosen at random each day.</p>
+        <div id="discover"><p class="muted">Loading…</p></div>
+      </section>
+      <section class="panel" aria-labelledby="notices-title">
+        <h2 id="notices-title">Notice board</h2>
+        <p class="panel-sub">Upcoming events, workshops and courses.</p>
+        <ul id="notices" class="notices"><li class="muted">Loading…</li></ul>
+      </section>
+    </div>
+
+    <section aria-label="Paper list">
+      <div class="controls">
+        <div class="search">
+          <label for="search">Search</label>
+          <input id="search" type="search" placeholder="Title, author, venue…  (press / to focus)" autocomplete="off">
+        </div>
+        <div>
+          <label for="f-class">Post-Bayesian class</label>
+          <select id="f-class"></select>
+        </div>
+        <div>
+          <label for="f-contrib">Contribution</label>
+          <select id="f-contrib"></select>
+        </div>
+        <div>
+          <label for="f-yfrom">Year from</label>
+          <select id="f-yfrom"></select>
+        </div>
+        <div>
+          <label for="f-yto">Year to</label>
+          <select id="f-yto"></select>
+        </div>
+        <button id="reset" class="btn" type="button">Reset</button>
+      </div>
+
+      <div class="status">
+        <span id="count" aria-live="polite">Loading…</span>
+        <span>Missing a paper? <a href="about.html#contributing">Suggest one</a>.</span>
+      </div>
+
+      <div class="table-wrap">
+        <table class="papers">
+          <thead id="thead"></thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer>Post-Bayesian Repository · maintained on <a href="https://github.com/Post-Bayesian-Repository/post_bayes_repo">GitHub</a></footer>
+  <script src="assets/papers.js"></script>
+</body>
+</html>

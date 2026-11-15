@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About · Post-Bayesian Repository</title>
+  <meta name="description" content="What the Post-Bayesian Repository covers, how papers are tagged, and how to suggest or add a paper.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="inner">
+      <a class="brand" href="index.html">Post-Bayesian Repository</a>
+      <div class="nav-links">
+        <a href="index.html">Papers</a>
+        <a href="background.html">Background</a>
+        <a href="resources.html">Resources</a>
+        <a href="about.html" class="active">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="prose">
+    <h1>About</h1>
+    <p>
+      Post-Bayesian methods are spread across statistics, machine learning, econometrics and learning theory, and the
+      same idea often turns up under different names: Gibbs posteriors, generalised Bayes, loss-based updating,
+      tempered posteriors, PAC-Bayes. This repository collects them in one searchable place under a common set of tags,
+      so it is easier to see how the pieces connect and to find the paper you half-remember.
+    </p>
+
+    <h2>What counts as “post-Bayesian”?</h2>
+    <p>
+      We include work that still produces a distribution over parameters or predictions, but changes <em>how</em> that
+      distribution is built. Usually this is because the standard Bayesian posterior is unreliable (the model or prior is
+      misspecified), impractical (the likelihood or posterior is intractable), or aimed at the wrong target (prediction
+      matters more than parameter recovery). Work that only computes the standard posterior more efficiently, such as
+      faster MCMC, is out of scope.
+    </p>
+
+    <h2>How papers are tagged</h2>
+    <h3>Post-Bayesian class</h3>
+    <p>A paper can belong to more than one class. Each class is explained on the <a href="background.html">Background</a> page.</p>
+    <ul>
+      <li><span class="chip gb">Generalised Bayes</span> Gibbs (generalised) posteriors, which replace the likelihood with a loss function: robust losses, learning-rate choice and computation, plus closely related work such as power posteriors and generalised variational inference.</li>
+      <li><span class="chip pro">Predictively Oriented Posteriors</span> Posteriors that score the posterior predictive itself, and their PAC-Bayesian precursors.</li>
+      <li><span class="chip mp">Martingale Posteriors</span> Predictive resampling and other predictive approaches, including the Bayesian bootstrap.</li>
+      <li><span class="chip pac">PAC-Bayes</span> Generalisation bounds and the frequentist theory used to analyse and design post-Bayesian methods.</li>
+    </ul>
+    <h3>Contribution style</h3>
+    <ul>
+      <li><strong>Theory</strong>: consistency, concentration, asymptotics, generalisation bounds, axiomatic justification.</li>
+      <li><strong>Method</strong>: a new posterior, loss, algorithm, or calibration procedure.</li>
+      <li><strong>Application</strong>: uses post-Bayesian ideas to solve a substantive applied problem.</li>
+      <li><strong>Review</strong>: surveys, tutorials and position papers.</li>
+    </ul>
+
+    <h2 id="contributing">Contributing</h2>
+    <p>Contributions are very welcome. There are two ways to add a paper:</p>
+    <ol>
+      <li>
+        <strong>Open an issue</strong> on
+        <a href="https://github.com/Post-Bayesian-Repository/post_bayes_repo/issues">GitHub</a> with a link to the paper
+        and the class and contribution style you would suggest.
+      </li>
+      <li>
+        <strong>Open a pull request</strong> adding a row to
+        <a href="https://github.com/Post-Bayesian-Repository/post_bayes_repo/blob/main/data/papers.csv"><code>data/papers.csv</code></a>.
+        The easiest way is to run <code>python3 scripts/add_paper.py &lt;arXiv ID or DOI&gt;</code> in a clone of the repository:
+        it looks up the metadata, asks for the tags and adds the row for you. To edit the file by hand instead:
+        use the published venue and year where they exist (otherwise <code>arXiv preprint</code>), put the author list
+        in quotes, always give the arXiv link when there is one, add the published link (DOI or proceedings page)
+        if the paper has appeared, and separate multiple classes or styles with a semicolon:
+<pre><code>title,authors,year,venue,arxiv,published,class,contribution
+Martingale posterior distributions,"Edwin Fong, Chris Holmes, Stephen G. Walker",2023,Journal of the Royal Statistical Society: Series B,https://arxiv.org/abs/2103.15671,https://doi.org/10.1093/jrsssb/qkad005,Martingale Posteriors,Theory; Method</code></pre>
+      </li>
+    </ol>
+    <p class="muted">Found a mistake in an entry, or think a paper is mis-tagged? Please open an issue as well.</p>
+
+    <h2>Maintainers</h2>
+    <ul>
+      <li>Rui-Yang Zhang [<a href="mailto:r.zhang26@lancaster.ac.uk">email</a>] [<a href="https://shusheng3927.github.io">page</a>]</li>
+    </ul>
+  </main>
+
+  <footer>Post-Bayesian Repository · maintained on <a href="https://github.com/Post-Bayesian-Repository/post_bayes_repo">GitHub</a></footer>
+</body>
+</html>
