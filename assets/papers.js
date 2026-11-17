@@ -1,18 +1,10 @@
-/* Paper table: loads data/papers.csv, then search / filter / sort in the browser.
+/* Paper table: loads data/papers.csv (and papers.bib, via common.js), then search / filter / sort in the browser.
    Multi-valued cells (class, contribution) are separated by ";" in the CSV.
    Each paper can have an `arxiv` link and a `published` link; both are shown when present. */
 (function () {
   "use strict";
 
-  // Colour class for each post-Bayesian category (matched by name).
-  const CLASS_STYLE = {
-    "Generalised Bayes": "gb",
-    "Predictively Oriented Posteriors": "pro",
-    "Martingale Posteriors": "mp",
-    "PAC-Bayes": "pac",
-  };
-
-  const STYLES = ["Theory", "Method", "Application", "Review"];
+  const { CLASS_STYLE, STYLES, esc, extLink, safeURL, norm } = window.PBR;
 
   const COLUMNS = [
     { key: "title", label: "Title", sortable: true },
@@ -20,7 +12,7 @@
     { key: "year", label: "Year", sortable: true },
     { key: "venue", label: "Venue", sortable: true },
     { key: "links", label: "Links", sortable: false },
-    { key: "class", label: "Post-Bayesian class", sortable: true },
+    { key: "class", label: "Topic", sortable: true },
     { key: "contribution", label: "Contribution", sortable: true },
   ];
 
@@ -34,35 +26,7 @@
   let papers = [];
   const state = { q: "", cls: "", contrib: "", yfrom: "", yto: "", sort: "year", dir: "desc" };
 
-  // ---------- CSV parsing (RFC 4180-ish: quotes, escaped quotes, newlines in quotes) ----------
-  function parseCSV(text) {
-    const rows = []; let row = []; let field = ""; let inQ = false;
-    text = text.replace(/^﻿/, "");
-    for (let i = 0; i < text.length; i++) {
-      const c = text[i];
-      if (inQ) {
-        if (c === '"') { if (text[i + 1] === '"') { field += '"'; i++; } else inQ = false; }
-        else field += c;
-      } else if (c === '"') inQ = true;
-      else if (c === ",") { row.push(field); field = ""; }
-      else if (c === "\n" || c === "\r") {
-        if (c === "\r" && text[i + 1] === "\n") i++;
-        row.push(field); field = "";
-        if (row.some((v) => v.trim() !== "")) rows.push(row);
-        row = [];
-      } else field += c;
-    }
-    row.push(field);
-    if (row.some((v) => v.trim() !== "")) rows.push(row);
-    if (!rows.length) return [];
-    const header = rows.shift().map((h) => h.trim().toLowerCase());
-    return rows.map((r) => Object.fromEntries(header.map((h, i) => [h, (r[i] || "").trim()])));
-  }
-
-  const splitMulti = (s) => (s || "").split(";").map((x) => x.trim()).filter(Boolean);
-
   // ---------- Helpers ----------
-  const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   // Match on the raw text and escape each piece separately, so a search term can never land inside an HTML entity.
   function highlight(text, q) {
     text = String(text);
@@ -71,10 +35,6 @@
     return text.split(new RegExp("(" + terms.join("|") + ")", "gi"))
       .map((part, i) => (i % 2 ? `<mark>${esc(part)}</mark>` : esc(part))).join("");
   }
-  // Only http(s) links are rendered, so a bad CSV value can never become a javascript: URL.
-  const safeURL = (u) => (/^https?:\/\//i.test(u || "") ? u : "");
-  const extLink = (u, label) => (safeURL(u) ? `<a href="${esc(u)}" target="_blank" rel="noopener">${label}</a>` : "");
-  const norm = (s) => (s || "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
 
   // ---------- URL state (so filtered views can be shared) ----------
   function readURL() {
@@ -133,6 +93,8 @@
 
     // Clicking a chip in the table filters by it.
     els.tbody.addEventListener("click", (e) => {
+      const bibBtn = e.target.closest("button[data-bib]");
+      if (bibBtn) { const p = papers.find((x) => x._bib && x._bib.key === bibBtn.dataset.bib); if (p) PBR.showBibDialog(p); return; }
       const b = e.target.closest("button[data-filter]");
       if (!b) return;
       const which = b.dataset.filter, val = b.dataset.value;
@@ -214,7 +176,8 @@
           <td class="authors">${highlight(p.authors, q)}</td>
           <td class="year">${esc(p.year)}</td>
           <td class="venue">${highlight(p.venue, q)}</td>
-          <td class="link">${[extLink(p.arxiv, "arXiv"), extLink(p.published, "Published")].filter(Boolean).join("<br>")}</td>
+          <td class="link">${[extLink(p.arxiv, "arXiv"), extLink(p.published, "Published"),
+            p._bib ? `<button type="button" class="link-btn" data-bib="${esc(p._bib.key)}" title="${p._bib.checked ? "BibTeX entry, checked by hand" : "BibTeX entry (auto-generated)"}">BibTeX${p._bib.checked ? " ✓" : ""}</button>` : ""].filter(Boolean).join("<br>")}</td>
           <td class="cls">${p._classes.map((c) =>
             `<button class="chip ${CLASS_STYLE[c] || ""}" data-filter="cls" data-value="${esc(c)}" title="Filter by ${esc(c)}">${esc(c)}</button>`).join("")}</td>
           <td class="contrib">${p._contribs.map((c) =>
@@ -274,21 +237,13 @@
   readURL();
   fetch("data/events.csv", { cache: "no-cache" })
     .then((r) => { if (!r.ok) throw new Error(r.status); return r.text(); })
-    .then((text) => renderNotices(parseCSV(text)))
+    .then((text) => renderNotices(PBR.parseCSV(text)))
     .catch(() => { const l = $("notices"); if (l) l.innerHTML = `<li class="muted">Could not load events.</li>`; });
   els.thead.addEventListener("click", onHeaderClick);
 
-  fetch("data/papers.csv", { cache: "no-cache" })
-    .then((r) => { if (!r.ok) throw new Error(r.status); return r.text(); })
-    .then((text) => {
-      papers = parseCSV(text).filter((p) => p.title).map((p) => {
-        const order = Object.keys(CLASS_STYLE);
-        p._classes = splitMulti(p.class).sort((x, y) => (order.indexOf(x) + 1 || 99) - (order.indexOf(y) + 1 || 99));
-        p._contribs = splitMulti(p.contribution).sort((x, y) => (STYLES.indexOf(x) + 1 || 99) - (STYLES.indexOf(y) + 1 || 99));
-        p._year = parseInt(p.year, 10) || 0;
-        p._hay = norm([p.title, p.authors, p.venue, p.year, p.class, p.contribution].join(" "));
-        return p;
-      });
+  PBR.loadPapers()
+    .then((loaded) => {
+      papers = loaded;
       buildControls();
       buildHeader();
       render();

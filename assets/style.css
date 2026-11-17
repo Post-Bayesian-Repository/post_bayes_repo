@@ -183,6 +183,92 @@ mark { background: #fcf8e3; color: inherit; padding: 0; }
 .resource-list .desc { display: block; color: var(--fg-muted); }
 .katex-display { overflow-x: auto; overflow-y: hidden; padding: 4px 0; }
 
+/* ---------- BibTeX (table button, dialog, graph panel) ---------- */
+.link-btn {
+  font: inherit; color: var(--link); background: none; border: 0; padding: 0; cursor: pointer; text-align: left;
+}
+.link-btn:hover { text-decoration: underline; }
+.link-btn:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
+.btn-sm { height: auto; padding: .2rem .55rem; font-size: .875rem; }
+.bib-head { display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 6px; }
+.bib-status { font-size: .85rem; color: var(--fg-muted); }
+.bib-status.checked { color: var(--c-mp); font-weight: 600; }
+.bib-text { margin: 0; font-size: .78rem; line-height: 1.45; white-space: pre; max-height: 320px; overflow: auto; border: 1px solid var(--border); }
+.bib-dialog {
+  border: 1px solid var(--border); border-radius: .3rem; padding: 0; width: min(680px, calc(100vw - 32px));
+  max-height: calc(100vh - 48px); color: var(--fg); box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .18);
+}
+.bib-dialog::backdrop { background: rgba(33, 37, 41, .45); }
+.dialog-inner { padding: 16px 20px 20px; }
+.dialog-top, .details-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+.dialog-top h2 { margin: 0 0 4px; padding: 0; border: 0; font-size: 1.3rem; }
+.dialog-paper { color: var(--fg-muted); margin-bottom: 10px; }
+.dialog-close {
+  font: inherit; font-size: 1.5rem; line-height: 1; color: var(--fg-muted); background: none; border: 0; cursor: pointer; padding: 0 4px;
+}
+.dialog-close:hover { color: var(--fg); }
+
+/* ---------- Citation graph ---------- */
+main.graph-page { max-width: 1320px; }
+.graph-lede { max-width: 860px; }
+.graph-controls { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 12px 24px; margin-bottom: 12px; }
+.legend { border: 0; padding: 0; margin: 0; min-width: 0; }
+.legend legend { font-size: .95rem; margin-bottom: 4px; padding: 0; }
+.legend-items { display: flex; flex-wrap: wrap; gap: 4px; }
+.legend-chip { display: inline-flex; align-items: center; gap: 6px; margin: 0; font-size: .85rem; }
+.legend-chip .n { font-weight: 400; opacity: .75; }
+.legend-chip[aria-pressed="false"] { background: #f1f3f5; color: var(--fg-muted); text-decoration: line-through; }
+.legend-chip[aria-pressed="false"] .dot { opacity: .3; }
+.dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; flex: none; }
+.graph-options { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 12px; }
+.graph-options label { display: block; font-size: .95rem; margin-bottom: 4px; }
+.graph-options select {
+  font: inherit; font-size: 1rem; color: var(--fg); background: #fff; border: 1px solid var(--border);
+  border-radius: .25rem; padding: .375rem .75rem; height: 38px; max-width: 280px;
+}
+.graph-options select:focus { outline: 0; border-color: #93b0f1; box-shadow: 0 0 0 .25rem rgba(39, 97, 227, .25); }
+.graph-options label.check { display: flex; align-items: center; gap: 6px; height: 38px; margin: 0; white-space: nowrap; }
+
+.graph-layout { display: grid; grid-template-columns: minmax(0, 1fr) 360px; gap: 20px; align-items: start; }
+.graph-box {
+  position: relative; height: min(72vh, 680px); min-height: 380px;
+  border: 1px solid var(--border); border-radius: .25rem; overflow: hidden; background: #fff; touch-action: none;
+}
+#graph { display: block; width: 100%; height: 100%; cursor: grab; }
+#graph:active { cursor: grabbing; }
+.graph-msg { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; margin: 0; padding: 24px; text-align: center; }
+.graph-msg[hidden] { display: none; }
+.zoom-btns { position: absolute; right: 8px; bottom: 8px; display: flex; gap: 4px; }
+.zoom-btns .btn { min-width: 32px; background: rgba(248, 249, 250, .92); }
+.edge { stroke: #b5bac0; stroke-width: 1; opacity: .6; transition: opacity .15s; }
+.edge.hi { stroke: #495057; opacity: .95; stroke-width: 1.4; }
+.edge.dim { opacity: .07; }
+.arrow-head { fill: #b5bac0; }
+.arrow-head.hi { fill: #495057; }
+.node { cursor: pointer; outline: none; }
+.node circle { transition: opacity .15s; }
+.node.dim circle { opacity: .18; }
+.node.sel circle, .node:focus-visible circle { stroke: #212529 !important; stroke-width: 3px !important; }
+.year-axis line { stroke: #eef0f2; }
+.year-axis text { font-family: var(--font); font-size: 12px; fill: var(--fg-muted); text-anchor: middle; }
+.graph-tip {
+  position: absolute; z-index: 2; pointer-events: none; max-width: 320px;
+  background: #fff; border: 1px solid var(--border); border-radius: .25rem; padding: 8px 10px;
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .12); font-size: .9rem; line-height: 1.35;
+}
+.graph-tip strong { display: block; font-weight: 600; margin-bottom: 2px; }
+.graph-tip span { display: block; color: var(--fg-muted); }
+.details { max-height: min(72vh, 680px); overflow-y: auto; }
+.details h2 { font-size: 1.15rem; margin: 0 0 6px; padding: 0; border: 0; line-height: 1.3; }
+.details h3 { font-size: 1rem; margin: 1rem 0 .4rem; }
+.details .d-meta { color: var(--fg-muted); margin-bottom: 4px; font-size: .95rem; }
+.details .d-links { margin: 6px 0 0; }
+.rel-list { list-style: none; padding: 0; margin: 0; font-size: .92rem; }
+.rel-list li { padding: 3px 0; }
+.rel-list .link-btn { display: inline; }
+.rel-list .dot { width: 8px; height: 8px; margin-right: 6px; vertical-align: 1px; }
+.graph-foot { font-size: .9rem; margin-top: 12px; }
+
 /* ---------- Responsive ---------- */
 @media (max-width: 991px) {
   .intro { grid-template-columns: minmax(0, 1fr) 220px; gap: 24px; }
@@ -191,6 +277,8 @@ mark { background: #fcf8e3; color: inherit; padding: 0; }
   .controls .search { grid-column: 1 / -1; }
   .with-toc { display: block; }
   .toc { display: none; }
+  .graph-layout { grid-template-columns: 1fr; }
+  .details { max-height: none; }
 }
 @media (max-width: 575px) {
   main { padding: 24px 16px 48px; }
@@ -202,4 +290,9 @@ mark { background: #fcf8e3; color: inherit; padding: 0; }
   h1 { font-size: 1.75rem; }
   [id] { scroll-margin-top: 108px; }  /* the navbar wraps onto two lines */
   .katex-display { font-size: .9em; }
+  .graph-box { height: 62vh; min-height: 340px; }
+  .graph-options { width: 100%; }
+  .graph-options > div { flex: 1 1 140px; }
+  .graph-options select { width: 100%; max-width: none; }
+  .legend-chip { font-size: .8rem; }
 }

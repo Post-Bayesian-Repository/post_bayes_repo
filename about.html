@@ -16,6 +16,7 @@
       <a class="brand" href="index.html">Post-Bayesian Repository</a>
       <div class="nav-links">
         <a href="index.html">Papers</a>
+        <a href="graph.html">Graph</a>
         <a href="background.html">Background</a>
         <a href="resources.html">Resources</a>
         <a href="about.html" class="active">About</a>
@@ -28,11 +29,11 @@
     <p>
       Post-Bayesian methods are spread across statistics, machine learning, econometrics and learning theory, and the
       same idea often turns up under different names: Gibbs posteriors, generalised Bayes, loss-based updating,
-      tempered posteriors, PAC-Bayes. This repository collects them in one searchable place under a common set of tags,
+      tempered posteriors. This repository collects them in one searchable place under a common set of tags,
       so it is easier to see how the pieces connect and to find the paper you half-remember.
     </p>
 
-    <h2>What counts as “post-Bayesian”?</h2>
+    <h2>What Counts as “Post-Bayesian”?</h2>
     <p>
       We include work that still produces a distribution over parameters or predictions, but changes <em>how</em> that
       distribution is built. Usually this is because the standard Bayesian posterior is unreliable (the model or prior is
@@ -41,16 +42,32 @@
       faster MCMC, is out of scope.
     </p>
 
-    <h2>How papers are tagged</h2>
-    <h3>Post-Bayesian class</h3>
-    <p>A paper can belong to more than one class. Each class is explained on the <a href="background.html">Background</a> page.</p>
+    <h2 id="precedents">Scope and Precedents</h2>
+    <p>
+      The table lists work from <a href="https://doi.org/10.1111/rssb.12158">Bissiri, Holmes &amp; Walker (2016)</a> onwards,
+      which framed general loss-based belief updating. Many of the ideas have a longer history, and the following earlier
+      papers are important precedents:
+    </p>
+    <ul class="precedents">
+      <li>Donald B. Rubin (1981). The Bayesian bootstrap. <em>Annals of Statistics</em>. [<a href="https://doi.org/10.1214/aos/1176345338">published</a>]</li>
+      <li>Michael A. Newton, Adrian E. Raftery (1994). Approximate Bayesian inference with the weighted likelihood bootstrap. <em>Journal of the Royal Statistical Society: Series B</em>. [<a href="https://doi.org/10.1111/j.2517-6161.1994.tb01956.x">published</a>]</li>
+      <li>David A. McAllester (1999). Some PAC-Bayesian theorems. <em>Machine Learning</em>. [<a href="https://doi.org/10.1023/A:1007618624809">published</a>]</li>
+      <li>Olivier Catoni (2007). PAC-Bayesian supervised classification: the thermodynamics of statistical learning. <em>IMS Lecture Notes Monograph Series</em>. [<a href="https://arxiv.org/abs/0712.0248">arXiv</a> · <a href="https://doi.org/10.1214/074921707000000391">published</a>]</li>
+      <li>Peter Grünwald (2012). The safe Bayesian: learning the learning rate via the mixability gap. <em>Algorithmic Learning Theory (ALT)</em>. [<a href="https://doi.org/10.1007/978-3-642-34106-9_16">published</a>]</li>
+      <li>Stephen G. Walker (2013). Bayesian inference with misspecified models. <em>Journal of Statistical Planning and Inference</em>. [<a href="https://doi.org/10.1016/j.jspi.2013.05.013">published</a>]</li>
+      <li>Giles Hooker, Anand N. Vidyashankar (2014). Bayesian model robustness via disparities. <em>TEST</em>. [<a href="https://arxiv.org/abs/1112.4213">arXiv</a> · <a href="https://doi.org/10.1007/s11749-014-0360-z">published</a>]</li>
+    </ul>
+
+    <h2>How Papers Are Tagged</h2>
+    <h3>Topic</h3>
+    <p>A paper can have more than one topic. Each topic is explained on the <a href="background.html">Background</a> page. The first three are post-Bayesian approaches; PAC-Bayes is included as a closely related theoretical framework.</p>
     <ul>
       <li><span class="chip gb">Generalised Bayes</span> Gibbs (generalised) posteriors, which replace the likelihood with a loss function: robust losses, learning-rate choice and computation, plus closely related work such as power posteriors and generalised variational inference.</li>
       <li><span class="chip pro">Predictively Oriented Posteriors</span> Posteriors that score the posterior predictive itself, and their PAC-Bayesian precursors.</li>
       <li><span class="chip mp">Martingale Posteriors</span> Predictive resampling and other predictive approaches, including the Bayesian bootstrap.</li>
-      <li><span class="chip pac">PAC-Bayes</span> Generalisation bounds and the frequentist theory used to analyse and design post-Bayesian methods.</li>
+      <li><span class="chip pac">PAC-Bayes</span> Not itself a post-Bayesian method, but a closely related theoretical framework: generalisation bounds for distributions over parameters, which are used to analyse and design post-Bayesian methods.</li>
     </ul>
-    <h3>Contribution style</h3>
+    <h3>Contribution Style</h3>
     <ul>
       <li><strong>Theory</strong>: consistency, concentration, asymptotics, generalisation bounds, axiomatic justification.</li>
       <li><strong>Method</strong>: a new posterior, loss, algorithm, or calibration procedure.</li>
@@ -64,7 +81,7 @@
       <li>
         <strong>Open an issue</strong> on
         <a href="https://github.com/Post-Bayesian-Repository/post_bayes_repo/issues">GitHub</a> with a link to the paper
-        and the class and contribution style you would suggest.
+        and the topic and contribution style you would suggest.
       </li>
       <li>
         <strong>Open a pull request</strong> adding a row to
@@ -73,7 +90,7 @@
         it looks up the metadata, asks for the tags and adds the row for you. To edit the file by hand instead:
         use the published venue and year where they exist (otherwise <code>arXiv preprint</code>), put the author list
         in quotes, always give the arXiv link when there is one, add the published link (DOI or proceedings page)
-        if the paper has appeared, and separate multiple classes or styles with a semicolon:
+        if the paper has appeared, and separate multiple topics or styles with a semicolon:
 <pre><code>title,authors,year,venue,arxiv,published,class,contribution
 Martingale posterior distributions,"Edwin Fong, Chris Holmes, Stephen G. Walker",2023,Journal of the Royal Statistical Society: Series B,https://arxiv.org/abs/2103.15671,https://doi.org/10.1093/jrsssb/qkad005,Martingale Posteriors,Theory; Method</code></pre>
       </li>
@@ -84,6 +101,12 @@ Martingale posterior distributions,"Edwin Fong, Chris Holmes, Stephen G. Walker"
     <ul>
       <li>Rui-Yang Zhang [<a href="mailto:r.zhang26@lancaster.ac.uk">email</a>] [<a href="https://shusheng3927.github.io">page</a>]</li>
     </ul>
+
+    <h2 id="acknowledgements">Acknowledgements</h2>
+    <p>
+      We thank <a href="https://williamlaplante.github.io">William Laplante</a> and <a href="https://yannmclatchie.github.io/">Yann McLatchie</a> for their helpful feedback
+      on the scope and content of this repository.
+    </p>
   </main>
 
   <footer>Post-Bayesian Repository · maintained on <a href="https://github.com/Post-Bayesian-Repository/post_bayes_repo">GitHub</a></footer>

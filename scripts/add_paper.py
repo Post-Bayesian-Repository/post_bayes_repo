@@ -38,6 +38,7 @@ CSV_PATH = ROOT / "data" / "papers.csv"
 FIELDS = ["title", "authors", "year", "venue", "arxiv", "published", "class", "contribution"]
 CLASSES = ["Generalised Bayes", "Predictively Oriented Posteriors", "Martingale Posteriors", "PAC-Bayes"]
 CONTRIBUTIONS = ["Theory", "Method", "Application", "Review"]
+FIRST_YEAR = 2016  # the table starts with Bissiri, Holmes & Walker (2016); earlier work goes on the About page
 UA = {"User-Agent": "post-bayes-repo-add-paper/1.0"}
 
 ARXIV_RE = re.compile(r"(?:arxiv\.org/(?:abs|pdf)/|arxiv:)?(\d{4}\.\d{4,5}|[a-z\-]+(?:\.[A-Z]{2})?/\d{7})(?:v\d+)?(?:\.pdf)?$", re.I)
@@ -263,6 +264,8 @@ def problems(row):
             out.append(f"missing {k}")
     if row.get("year") and not re.fullmatch(r"\d{4}", row["year"]):
         out.append(f"year '{row['year']}' is not a 4-digit year")
+    elif row.get("year") and int(row["year"]) < FIRST_YEAR:
+        out.append(f"year {row['year']} is before {FIRST_YEAR}: list it under 'Scope and precedents' in about.html instead")
     if not row.get("arxiv") and not row.get("published"):
         out.append("no link at all")
     if row.get("arxiv") and not re.match(r"https://arxiv\.org/abs/", row["arxiv"]):

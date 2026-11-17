@@ -1,0 +1,519 @@
+citing,cited,source
+PAC-Bayesian theory meets Bayesian inference,A general framework for updating belief distributions,openalex; arxiv-html
+PAC-Bayesian theory meets Bayesian inference,"Inconsistency of Bayesian inference for misspecified linear models, and a proposal for repairing it",arxiv-html
+Assigning a value to a power likelihood in a general Bayesian model,A general framework for updating belief distributions,openalex; arxiv-html
+Assigning a value to a power likelihood in a general Bayesian model,"Inconsistency of Bayesian inference for misspecified linear models, and a proposal for repairing it",openalex; arxiv-html
+Assigning a value to a power likelihood in a general Bayesian model,Calibrating general posterior credible regions,arxiv-html
+Assigning a value to a power likelihood in a general Bayesian model,Robust Bayesian inference via coarsening,openalex; arxiv-html
+"Inconsistency of Bayesian inference for misspecified linear models, and a proposal for repairing it",A general framework for updating belief distributions,openalex; crossref; arxiv-html
+"Inconsistency of Bayesian inference for misspecified linear models, and a proposal for repairing it",Assigning a value to a power likelihood in a general Bayesian model,openalex; crossref
+"Inconsistency of Bayesian inference for misspecified linear models, and a proposal for repairing it",Calibrating general posterior credible regions,openalex; crossref
+"Inconsistency of Bayesian inference for misspecified linear models, and a proposal for repairing it",Robust Bayesian inference via coarsening,openalex; crossref
+Doubly robust Bayesian inference for non-stationary streaming data with β-divergences,A general framework for updating belief distributions,openalex; arxiv-html
+Doubly robust Bayesian inference for non-stationary streaming data with β-divergences,Robust Bayes estimation using the density power divergence,openalex; arxiv-html
+Doubly robust Bayesian inference for non-stationary streaming data with β-divergences,Principles of Bayesian inference using general divergence criteria,openalex; arxiv-html
+Doubly robust Bayesian inference for non-stationary streaming data with β-divergences,Spatio-temporal Bayesian on-line changepoint detection with model selection,arxiv-html
+Nonparametric learning from Bayesian models with randomized objective functions,A general framework for updating belief distributions,openalex; arxiv-html
+Nonparametric learning from Bayesian models with randomized objective functions,General Bayesian updating and the loss-likelihood bootstrap,arxiv-html
+Principles of Bayesian inference using general divergence criteria,A general framework for updating belief distributions,openalex; crossref; arxiv-html
+Principles of Bayesian inference using general divergence criteria,Robust Bayes estimation using the density power divergence,openalex; crossref; arxiv-html
+Principles of Bayesian inference using general divergence criteria,Assigning a value to a power likelihood in a general Bayesian model,openalex
+Principles of Bayesian inference using general divergence criteria,"Inconsistency of Bayesian inference for misspecified linear models, and a proposal for repairing it",openalex
+Principles of Bayesian inference using general divergence criteria,Robust Bayesian inference via coarsening,openalex; crossref; arxiv-html
+Bayesian fractional posteriors,A general framework for updating belief distributions,openalex; crossref; arxiv-html
+Bayesian fractional posteriors,Assigning a value to a power likelihood in a general Bayesian model,openalex; crossref
+Bayesian fractional posteriors,"Inconsistency of Bayesian inference for misspecified linear models, and a proposal for repairing it",openalex; crossref; arxiv-html
+Bayesian fractional posteriors,Robust Bayesian inference via coarsening,openalex; crossref; arxiv-html
+Calibrating general posterior credible regions,A general framework for updating belief distributions,openalex; crossref; arxiv-html
+Calibrating general posterior credible regions,Assigning a value to a power likelihood in a general Bayesian model,openalex; crossref; arxiv-html
+Calibrating general posterior credible regions,"Inconsistency of Bayesian inference for misspecified linear models, and a proposal for repairing it",openalex; crossref; arxiv-html
+Calibrating general posterior credible regions,General Bayesian updating and the loss-likelihood bootstrap,openalex; crossref
+General Bayesian updating and the loss-likelihood bootstrap,A general framework for updating belief distributions,openalex; crossref; arxiv-html
+General Bayesian updating and the loss-likelihood bootstrap,Assigning a value to a power likelihood in a general Bayesian model,openalex; crossref; arxiv-html
+General Bayesian updating and the loss-likelihood bootstrap,Calibrating general posterior credible regions,openalex; crossref; arxiv-html
+Robust Bayesian inference via coarsening,A general framework for updating belief distributions,openalex; arxiv-html
+Robust Bayesian inference via coarsening,"Inconsistency of Bayesian inference for misspecified linear models, and a proposal for repairing it",openalex; arxiv-html
+Scalable nonparametric sampling from multimodal posteriors with the posterior bootstrap,A general framework for updating belief distributions,openalex; arxiv-html
+Scalable nonparametric sampling from multimodal posteriors with the posterior bootstrap,"Inconsistency of Bayesian inference for misspecified linear models, and a proposal for repairing it",openalex; arxiv-html
+Scalable nonparametric sampling from multimodal posteriors with the posterior bootstrap,Nonparametric learning from Bayesian models with randomized objective functions,openalex; arxiv-html
+Scalable nonparametric sampling from multimodal posteriors with the posterior bootstrap,General Bayesian updating and the loss-likelihood bootstrap,openalex; arxiv-html
+Concentration of tempered posteriors and of their variational approximations,"Inconsistency of Bayesian inference for misspecified linear models, and a proposal for repairing it",openalex; crossref; arxiv-html
+Concentration of tempered posteriors and of their variational approximations,Bayesian fractional posteriors,openalex; crossref; arxiv-html
+Learning under model misspecification: Applications to variational and ensemble methods,A general framework for updating belief distributions,openalex; arxiv-html
+Learning under model misspecification: Applications to variational and ensemble methods,PAC-Bayesian theory meets Bayesian inference,arxiv-html
+Learning under model misspecification: Applications to variational and ensemble methods,"Inconsistency of Bayesian inference for misspecified linear models, and a proposal for repairing it",openalex; arxiv-html
+Learning under model misspecification: Applications to variational and ensemble methods,Nonparametric learning from Bayesian models with randomized objective functions,openalex; arxiv-html
+Learning under model misspecification: Applications to variational and ensemble methods,Principles of Bayesian inference using general divergence criteria,openalex; arxiv-html
+Learning under model misspecification: Applications to variational and ensemble methods,MMD-Bayes: Robust Bayesian estimation via maximum mean discrepancy,openalex; arxiv-html
+Learning under model misspecification: Applications to variational and ensemble methods,An optimization-centric view on Bayes' rule: Reviewing and generalizing variational inference,openalex; arxiv-html
+MMD-Bayes: Robust Bayesian estimation via maximum mean discrepancy,A general framework for updating belief distributions,openalex; arxiv-html
+MMD-Bayes: Robust Bayesian estimation via maximum mean discrepancy,Robust Bayes estimation using the density power divergence,openalex; arxiv-html
+MMD-Bayes: Robust Bayesian estimation via maximum mean discrepancy,"Inconsistency of Bayesian inference for misspecified linear models, and a proposal for repairing it",openalex; arxiv-html
+MMD-Bayes: Robust Bayesian estimation via maximum mean discrepancy,Principles of Bayesian inference using general divergence criteria,openalex; arxiv-html
+MMD-Bayes: Robust Bayesian estimation via maximum mean discrepancy,Bayesian fractional posteriors,openalex; arxiv-html
+MMD-Bayes: Robust Bayesian estimation via maximum mean discrepancy,Calibrating general posterior credible regions,arxiv-html
+MMD-Bayes: Robust Bayesian estimation via maximum mean discrepancy,Concentration of tempered posteriors and of their variational approximations,openalex; arxiv-html
+MMD-Bayes: Robust Bayesian estimation via maximum mean discrepancy,An optimization-centric view on Bayes' rule: Reviewing and generalizing variational inference,openalex; arxiv-html
+Quasi-Bayes properties of a procedure for sequential learning in mixture models,On recursive Bayesian predictive distributions,openalex; crossref
+"Asymptotic normality, concentration, and coverage of generalized posteriors",A general framework for updating belief distributions,openalex; arxiv-html
+Focused Bayesian prediction,A general framework for updating belief distributions,openalex; crossref; arxiv-html
+Focused Bayesian prediction,Assigning a value to a power likelihood in a general Bayesian model,openalex; crossref; arxiv-html
+Focused Bayesian prediction,"Inconsistency of Bayesian inference for misspecified linear models, and a proposal for repairing it",openalex; crossref; arxiv-html
+Focused Bayesian prediction,Calibrating general posterior credible regions,openalex; crossref; arxiv-html
+Focused Bayesian prediction,General Bayesian updating and the loss-likelihood bootstrap,openalex; crossref; arxiv-html
+Focused Bayesian prediction,Robust Bayesian inference via coarsening,openalex; crossref; arxiv-html
+Focused Bayesian prediction,An optimization-centric view on Bayes' rule: Reviewing and generalizing variational inference,openalex; arxiv-html
+A Predictive Approach to Bayesian Nonparametric Survival Analysis,On recursive Bayesian predictive distributions,openalex; arxiv-html
+A Predictive Approach to Bayesian Nonparametric Survival Analysis,Martingale posterior distributions,openalex; arxiv-html
+An optimization-centric view on Bayes' rule: Reviewing and generalizing variational inference,A general framework for updating belief distributions,openalex
+An optimization-centric view on Bayes' rule: Reviewing and generalizing variational inference,PAC-Bayesian theory meets Bayesian inference,openalex
+An optimization-centric view on Bayes' rule: Reviewing and generalizing variational inference,Robust Bayes estimation using the density power divergence,openalex
+An optimization-centric view on Bayes' rule: Reviewing and generalizing variational inference,Assigning a value to a power likelihood in a general Bayesian model,openalex
+An optimization-centric view on Bayes' rule: Reviewing and generalizing variational inference,"Inconsistency of Bayesian inference for misspecified linear models, and a proposal for repairing it",openalex
+An optimization-centric view on Bayes' rule: Reviewing and generalizing variational inference,Principles of Bayesian inference using general divergence criteria,openalex
+An optimization-centric view on Bayes' rule: Reviewing and generalizing variational inference,Spatio-temporal Bayesian on-line changepoint detection with model selection,openalex
+An optimization-centric view on Bayes' rule: Reviewing and generalizing variational inference,General Bayesian updating and the loss-likelihood bootstrap,openalex
+An optimization-centric view on Bayes' rule: Reviewing and generalizing variational inference,Robust Bayesian inference via coarsening,openalex
+An optimization-centric view on Bayes' rule: Reviewing and generalizing variational inference,MMD-Bayes: Robust Bayesian estimation via maximum mean discrepancy,openalex
+"Direct Gibbs posterior inference on risk minimizers: construction, concentration, and calibration",A general framework for updating belief distributions,openalex; crossref; arxiv-html
+"Direct Gibbs posterior inference on risk minimizers: construction, concentration, and calibration",Assigning a value to a power likelihood in a general Bayesian model,openalex; crossref; arxiv-html
+"Direct Gibbs posterior inference on risk minimizers: construction, concentration, and calibration","Inconsistency of Bayesian inference for misspecified linear models, and a proposal for repairing it",openalex; crossref; arxiv-html
+"Direct Gibbs posterior inference on risk minimizers: construction, concentration, and calibration",Bayesian fractional posteriors,openalex; crossref
+"Direct Gibbs posterior inference on risk minimizers: construction, concentration, and calibration",Calibrating general posterior credible regions,openalex; crossref; arxiv-html
+"Direct Gibbs posterior inference on risk minimizers: construction, concentration, and calibration",General Bayesian updating and the loss-likelihood bootstrap,openalex; crossref; arxiv-html
+"Direct Gibbs posterior inference on risk minimizers: construction, concentration, and calibration",Concentration of tempered posteriors and of their variational approximations,openalex; crossref; arxiv-html
+"Direct Gibbs posterior inference on risk minimizers: construction, concentration, and calibration",A comparison of learning rate selection methods in generalized Bayesian inference,openalex; crossref; arxiv-html
+General Bayesian loss function selection and the use of improper models,A general framework for updating belief distributions,openalex; crossref
+General Bayesian loss function selection and the use of improper models,Assigning a value to a power likelihood in a general Bayesian model,openalex; crossref
+General Bayesian loss function selection and the use of improper models,General Bayesian updating and the loss-likelihood bootstrap,openalex; crossref
+General Bayesian loss function selection and the use of improper models,Robust Bayesian inference via coarsening,openalex; crossref
+General Bayesian loss function selection and the use of improper models,Robust generalised Bayesian inference for intractable likelihoods,openalex; crossref
+Generalized variational inference in function spaces: Gaussian measures meet Bayesian deep learning,An optimization-centric view on Bayes' rule: Reviewing and generalizing variational inference,openalex; arxiv-html
+PACm-Bayes: Narrowing the empirical risk gap in the misspecified Bayesian regime,A general framework for updating belief distributions,openalex; arxiv-html
+PACm-Bayes: Narrowing the empirical risk gap in the misspecified Bayesian regime,PAC-Bayesian theory meets Bayesian inference,openalex; arxiv-html
+PACm-Bayes: Narrowing the empirical risk gap in the misspecified Bayesian regime,"Inconsistency of Bayesian inference for misspecified linear models, and a proposal for repairing it",openalex; arxiv-html
+PACm-Bayes: Narrowing the empirical risk gap in the misspecified Bayesian regime,Learning under model misspecification: Applications to variational and ensemble methods,openalex; arxiv-html
+PACm-Bayes: Narrowing the empirical risk gap in the misspecified Bayesian regime,An optimization-centric view on Bayes' rule: Reviewing and generalizing variational inference,openalex
+Robust Bayesian inference for simulator-based models via the MMD posterior bootstrap,A general framework for updating belief distributions,openalex; arxiv-html
+Robust Bayesian inference for simulator-based models via the MMD posterior bootstrap,Robust Bayes estimation using the density power divergence,arxiv-html
+Robust Bayesian inference for simulator-based models via the MMD posterior bootstrap,"Inconsistency of Bayesian inference for misspecified linear models, and a proposal for repairing it",openalex; arxiv-html
+Robust Bayesian inference for simulator-based models via the MMD posterior bootstrap,Nonparametric learning from Bayesian models with randomized objective functions,arxiv-html
+Robust Bayesian inference for simulator-based models via the MMD posterior bootstrap,Principles of Bayesian inference using general divergence criteria,openalex
+Robust Bayesian inference for simulator-based models via the MMD posterior bootstrap,General Bayesian updating and the loss-likelihood bootstrap,openalex; arxiv-html
+Robust Bayesian inference for simulator-based models via the MMD posterior bootstrap,Scalable nonparametric sampling from multimodal posteriors with the posterior bootstrap,openalex; arxiv-html
+Robust Bayesian inference for simulator-based models via the MMD posterior bootstrap,MMD-Bayes: Robust Bayesian estimation via maximum mean discrepancy,arxiv-html
+Robust Bayesian inference for simulator-based models via the MMD posterior bootstrap,Focused Bayesian prediction,openalex; arxiv-html
+Robust Bayesian inference for simulator-based models via the MMD posterior bootstrap,An optimization-centric view on Bayes' rule: Reviewing and generalizing variational inference,openalex; arxiv-html
+Robust Bayesian inference for simulator-based models via the MMD posterior bootstrap,Robust generalised Bayesian inference for intractable likelihoods,openalex; arxiv-html
+Robust Bayesian inference for simulator-based models via the MMD posterior bootstrap,A comparison of learning rate selection methods in generalized Bayesian inference,openalex; arxiv-html
+Robust Bayesian inference for simulator-based models via the MMD posterior bootstrap,Generalized Bayesian likelihood-free inference,openalex; arxiv-html
+Robust generalised Bayesian inference for intractable likelihoods,A general framework for updating belief distributions,openalex; crossref; arxiv-html
+Robust generalised Bayesian inference for intractable likelihoods,Robust Bayes estimation using the density power divergence,openalex; crossref; arxiv-html
+Robust generalised Bayesian inference for intractable likelihoods,Assigning a value to a power likelihood in a general Bayesian model,openalex; crossref; arxiv-html
+Robust generalised Bayesian inference for intractable likelihoods,"Inconsistency of Bayesian inference for misspecified linear models, and a proposal for repairing it",openalex; crossref
+Robust generalised Bayesian inference for intractable likelihoods,Principles of Bayesian inference using general divergence criteria,openalex; crossref
+Robust generalised Bayesian inference for intractable likelihoods,General Bayesian updating and the loss-likelihood bootstrap,openalex; crossref; arxiv-html
+Robust generalised Bayesian inference for intractable likelihoods,Robust Bayesian inference via coarsening,openalex; crossref; arxiv-html
+Robust generalised Bayesian inference for intractable likelihoods,MMD-Bayes: Robust Bayesian estimation via maximum mean discrepancy,openalex; crossref; arxiv-html
+Robust generalised Bayesian inference for intractable likelihoods,"Asymptotic normality, concentration, and coverage of generalized posteriors",openalex; crossref; arxiv-html
+Robust generalised Bayesian inference for intractable likelihoods,An optimization-centric view on Bayes' rule: Reviewing and generalizing variational inference,openalex; arxiv-html
+Robust generalised Bayesian inference for intractable likelihoods,A comparison of learning rate selection methods in generalized Bayesian inference,openalex; crossref; arxiv-html
+A comparison of learning rate selection methods in generalized Bayesian inference,A general framework for updating belief distributions,openalex; crossref; arxiv-html
+A comparison of learning rate selection methods in generalized Bayesian inference,Assigning a value to a power likelihood in a general Bayesian model,openalex; crossref; arxiv-html
+A comparison of learning rate selection methods in generalized Bayesian inference,"Inconsistency of Bayesian inference for misspecified linear models, and a proposal for repairing it",openalex; crossref; arxiv-html
+A comparison of learning rate selection methods in generalized Bayesian inference,Bayesian fractional posteriors,openalex; crossref; arxiv-html
+A comparison of learning rate selection methods in generalized Bayesian inference,Calibrating general posterior credible regions,openalex; crossref; arxiv-html
+A comparison of learning rate selection methods in generalized Bayesian inference,General Bayesian updating and the loss-likelihood bootstrap,openalex; crossref; arxiv-html
+A comparison of learning rate selection methods in generalized Bayesian inference,Robust Bayesian inference via coarsening,openalex; crossref; arxiv-html
+A rigorous link between deep ensembles and (variational) Bayesian methods,A general framework for updating belief distributions,openalex; arxiv-html
+A rigorous link between deep ensembles and (variational) Bayesian methods,Principles of Bayesian inference using general divergence criteria,openalex; arxiv-html
+A rigorous link between deep ensembles and (variational) Bayesian methods,Robust Bayesian inference via coarsening,openalex; arxiv-html
+A rigorous link between deep ensembles and (variational) Bayesian methods,Adversarial interpretation of Bayesian inference,arxiv-html
+A rigorous link between deep ensembles and (variational) Bayesian methods,An optimization-centric view on Bayes' rule: Reviewing and generalizing variational inference,arxiv-html
+A rigorous link between deep ensembles and (variational) Bayesian methods,Generalized variational inference in function spaces: Gaussian measures meet Bayesian deep learning,openalex; arxiv-html
+A rigorous link between deep ensembles and (variational) Bayesian methods,Robust generalised Bayesian inference for intractable likelihoods,openalex; arxiv-html
+A rigorous link between deep ensembles and (variational) Bayesian methods,A comparison of learning rate selection methods in generalized Bayesian inference,openalex; arxiv-html
+A rigorous link between deep ensembles and (variational) Bayesian methods,Robust and scalable Bayesian online changepoint detection,openalex; arxiv-html
+A rigorous link between deep ensembles and (variational) Bayesian methods,User-friendly introduction to PAC-Bayes bounds,openalex; arxiv-html
+Generalized Bayesian inference for discrete intractable likelihood,A general framework for updating belief distributions,openalex; crossref; arxiv-html
+Generalized Bayesian inference for discrete intractable likelihood,Robust Bayes estimation using the density power divergence,openalex; crossref; arxiv-html
+Generalized Bayesian inference for discrete intractable likelihood,Calibrating general posterior credible regions,openalex; crossref; arxiv-html
+Generalized Bayesian inference for discrete intractable likelihood,General Bayesian updating and the loss-likelihood bootstrap,openalex; crossref; arxiv-html
+Generalized Bayesian inference for discrete intractable likelihood,MMD-Bayes: Robust Bayesian estimation via maximum mean discrepancy,openalex; crossref; arxiv-html
+Generalized Bayesian inference for discrete intractable likelihood,"Asymptotic normality, concentration, and coverage of generalized posteriors",openalex; crossref; arxiv-html
+Generalized Bayesian inference for discrete intractable likelihood,An optimization-centric view on Bayes' rule: Reviewing and generalizing variational inference,crossref; arxiv-html
+Generalized Bayesian inference for discrete intractable likelihood,Robust Bayesian inference for simulator-based models via the MMD posterior bootstrap,openalex; crossref; arxiv-html
+Generalized Bayesian inference for discrete intractable likelihood,Robust generalised Bayesian inference for intractable likelihoods,openalex; crossref; arxiv-html
+Generalized Bayesian inference for discrete intractable likelihood,Generalized Bayesian likelihood-free inference,openalex; crossref; arxiv-html
+Martingale posterior distributions,A general framework for updating belief distributions,openalex; crossref; arxiv-html
+Martingale posterior distributions,Nonparametric learning from Bayesian models with randomized objective functions,openalex; arxiv-html
+Martingale posterior distributions,On recursive Bayesian predictive distributions,openalex; crossref; arxiv-html
+Martingale posterior distributions,General Bayesian updating and the loss-likelihood bootstrap,openalex; crossref; arxiv-html
+Martingale posterior distributions,Scalable nonparametric sampling from multimodal posteriors with the posterior bootstrap,openalex; arxiv-html
+Martingale posterior distributions,Quasi-Bayes properties of a procedure for sequential learning in mixture models,openalex; crossref; arxiv-html
+Martingale posterior distributions,Statistical inference with exchangeability and martingales,openalex
+Martingale posterior neural processes,Martingale posterior distributions,openalex; arxiv-html
+Prediction-based uncertainty quantification for exchangeable sequences,Quasi-Bayes properties of a procedure for sequential learning in mixture models,openalex; crossref
+Prediction-based uncertainty quantification for exchangeable sequences,Martingale posterior distributions,openalex; crossref
+Robust and scalable Bayesian online changepoint detection,A general framework for updating belief distributions,openalex; arxiv-html
+Robust and scalable Bayesian online changepoint detection,Robust Bayes estimation using the density power divergence,openalex; arxiv-html
+Robust and scalable Bayesian online changepoint detection,Assigning a value to a power likelihood in a general Bayesian model,openalex; arxiv-html
+Robust and scalable Bayesian online changepoint detection,Principles of Bayesian inference using general divergence criteria,openalex
+Robust and scalable Bayesian online changepoint detection,Spatio-temporal Bayesian on-line changepoint detection with model selection,arxiv-html
+Robust and scalable Bayesian online changepoint detection,Calibrating general posterior credible regions,openalex; arxiv-html
+Robust and scalable Bayesian online changepoint detection,General Bayesian updating and the loss-likelihood bootstrap,openalex; arxiv-html
+Robust and scalable Bayesian online changepoint detection,MMD-Bayes: Robust Bayesian estimation via maximum mean discrepancy,arxiv-html
+Robust and scalable Bayesian online changepoint detection,An optimization-centric view on Bayes' rule: Reviewing and generalizing variational inference,arxiv-html
+Robust and scalable Bayesian online changepoint detection,"Direct Gibbs posterior inference on risk minimizers: construction, concentration, and calibration",openalex; arxiv-html
+Robust and scalable Bayesian online changepoint detection,General Bayesian loss function selection and the use of improper models,openalex; arxiv-html
+Robust and scalable Bayesian online changepoint detection,Robust Bayesian inference for simulator-based models via the MMD posterior bootstrap,openalex; arxiv-html
+Robust and scalable Bayesian online changepoint detection,Robust generalised Bayesian inference for intractable likelihoods,openalex; arxiv-html
+Robust and scalable Bayesian online changepoint detection,A comparison of learning rate selection methods in generalized Bayesian inference,openalex; arxiv-html
+Robust and scalable Bayesian online changepoint detection,Generalized Bayesian inference for discrete intractable likelihood,openalex; arxiv-html
+Robust and scalable Bayesian online changepoint detection,Martingale posterior distributions,openalex; arxiv-html
+Robust and scalable Bayesian online changepoint detection,Generalized Bayesian likelihood-free inference,openalex; arxiv-html
+Statistical inference with exchangeability and martingales,Nonparametric learning from Bayesian models with randomized objective functions,openalex; crossref
+Statistical inference with exchangeability and martingales,On recursive Bayesian predictive distributions,openalex; crossref
+Statistical inference with exchangeability and martingales,General Bayesian updating and the loss-likelihood bootstrap,openalex; crossref
+Statistical inference with exchangeability and martingales,Scalable nonparametric sampling from multimodal posteriors with the posterior bootstrap,openalex; crossref
+Statistical inference with exchangeability and martingales,Martingale posterior distributions,openalex; crossref
+Exact sampling of Gibbs measures with estimated losses,A general framework for updating belief distributions,openalex; arxiv-html
+Exact sampling of Gibbs measures with estimated losses,Robust Bayes estimation using the density power divergence,openalex; arxiv-html
+Exact sampling of Gibbs measures with estimated losses,Principles of Bayesian inference using general divergence criteria,openalex; arxiv-html
+Exact sampling of Gibbs measures with estimated losses,Robust Bayesian inference via coarsening,arxiv-html
+Exact sampling of Gibbs measures with estimated losses,Concentration of tempered posteriors and of their variational approximations,openalex; arxiv-html
+Exact sampling of Gibbs measures with estimated losses,MMD-Bayes: Robust Bayesian estimation via maximum mean discrepancy,arxiv-html
+Exact sampling of Gibbs measures with estimated losses,"Asymptotic normality, concentration, and coverage of generalized posteriors",openalex; arxiv-html
+Exact sampling of Gibbs measures with estimated losses,An optimization-centric view on Bayes' rule: Reviewing and generalizing variational inference,arxiv-html
+Exact sampling of Gibbs measures with estimated losses,Robust Bayesian inference for simulator-based models via the MMD posterior bootstrap,openalex; arxiv-html
+Exact sampling of Gibbs measures with estimated losses,Robust generalised Bayesian inference for intractable likelihoods,openalex; arxiv-html
+Exact sampling of Gibbs measures with estimated losses,Generalized Bayesian inference for discrete intractable likelihood,openalex
+Exact sampling of Gibbs measures with estimated losses,Robust and scalable Bayesian online changepoint detection,openalex
+Exact sampling of Gibbs measures with estimated losses,Generalized Bayesian likelihood-free inference,openalex; arxiv-html
+Exact sampling of Gibbs measures with estimated losses,Robust and conjugate Gaussian process regression,openalex
+Exact sampling of Gibbs measures with estimated losses,User-friendly introduction to PAC-Bayes bounds,openalex; arxiv-html
+Generalized Bayesian likelihood-free inference,A general framework for updating belief distributions,openalex; crossref; arxiv-html
+Generalized Bayesian likelihood-free inference,Robust Bayes estimation using the density power divergence,openalex; arxiv-html
+Generalized Bayesian likelihood-free inference,Assigning a value to a power likelihood in a general Bayesian model,openalex; crossref; arxiv-html
+Generalized Bayesian likelihood-free inference,Nonparametric learning from Bayesian models with randomized objective functions,openalex; crossref; arxiv-html
+Generalized Bayesian likelihood-free inference,Principles of Bayesian inference using general divergence criteria,openalex; crossref; arxiv-html
+Generalized Bayesian likelihood-free inference,Bayesian fractional posteriors,openalex; crossref; arxiv-html
+Generalized Bayesian likelihood-free inference,Calibrating general posterior credible regions,openalex; crossref; arxiv-html
+Generalized Bayesian likelihood-free inference,General Bayesian updating and the loss-likelihood bootstrap,openalex; crossref; arxiv-html
+Generalized Bayesian likelihood-free inference,Scalable nonparametric sampling from multimodal posteriors with the posterior bootstrap,openalex; crossref; arxiv-html
+Generalized Bayesian likelihood-free inference,MMD-Bayes: Robust Bayesian estimation via maximum mean discrepancy,openalex; crossref; arxiv-html
+Generalized Bayesian likelihood-free inference,"Asymptotic normality, concentration, and coverage of generalized posteriors",openalex; crossref; arxiv-html
+Generalized Bayesian likelihood-free inference,Focused Bayesian prediction,openalex; crossref; arxiv-html
+Generalized Bayesian likelihood-free inference,An optimization-centric view on Bayes' rule: Reviewing and generalizing variational inference,crossref; arxiv-html
+Generalized Bayesian likelihood-free inference,Robust Bayesian inference for simulator-based models via the MMD posterior bootstrap,openalex; crossref; arxiv-html
+Generalized Bayesian likelihood-free inference,Robust generalised Bayesian inference for intractable likelihoods,openalex; crossref; arxiv-html
+Generalized Bayesian likelihood-free inference,Generalized Bayesian inference for discrete intractable likelihood,openalex; crossref; arxiv-html
+Outlier-robust Kalman filtering through generalised Bayes,A general framework for updating belief distributions,openalex; arxiv-html
+Outlier-robust Kalman filtering through generalised Bayes,Assigning a value to a power likelihood in a general Bayesian model,openalex; arxiv-html
+Outlier-robust Kalman filtering through generalised Bayes,"Inconsistency of Bayesian inference for misspecified linear models, and a proposal for repairing it",openalex; arxiv-html
+Outlier-robust Kalman filtering through generalised Bayes,Principles of Bayesian inference using general divergence criteria,openalex
+Outlier-robust Kalman filtering through generalised Bayes,Bayesian fractional posteriors,arxiv-html
+Outlier-robust Kalman filtering through generalised Bayes,Robust Bayesian inference via coarsening,openalex; arxiv-html
+Outlier-robust Kalman filtering through generalised Bayes,Concentration of tempered posteriors and of their variational approximations,arxiv-html
+Outlier-robust Kalman filtering through generalised Bayes,Adversarial interpretation of Bayesian inference,arxiv-html
+Outlier-robust Kalman filtering through generalised Bayes,An optimization-centric view on Bayes' rule: Reviewing and generalizing variational inference,arxiv-html
+Outlier-robust Kalman filtering through generalised Bayes,General Bayesian loss function selection and the use of improper models,openalex; arxiv-html
+Outlier-robust Kalman filtering through generalised Bayes,Robust generalised Bayesian inference for intractable likelihoods,openalex; arxiv-html
+Outlier-robust Kalman filtering through generalised Bayes,Generalized Bayesian inference for discrete intractable likelihood,openalex; arxiv-html
+Outlier-robust Kalman filtering through generalised Bayes,Martingale posterior distributions,openalex; arxiv-html
+Outlier-robust Kalman filtering through generalised Bayes,Robust and scalable Bayesian online changepoint detection,openalex; arxiv-html
+Outlier-robust Kalman filtering through generalised Bayes,Robust and conjugate Gaussian process regression,openalex; arxiv-html
+Outlier-robust Kalman filtering through generalised Bayes,Robustifying likelihoods by optimistically re-weighting data,openalex; arxiv-html
+Robust and conjugate Gaussian process regression,A general framework for updating belief distributions,openalex; arxiv-html
+Robust and conjugate Gaussian process regression,Robust Bayes estimation using the density power divergence,openalex; arxiv-html
+Robust and conjugate Gaussian process regression,Principles of Bayesian inference using general divergence criteria,openalex
+Robust and conjugate Gaussian process regression,Calibrating general posterior credible regions,openalex; arxiv-html
+Robust and conjugate Gaussian process regression,General Bayesian updating and the loss-likelihood bootstrap,openalex; arxiv-html
+Robust and conjugate Gaussian process regression,Robust Bayesian inference via coarsening,openalex; arxiv-html
+Robust and conjugate Gaussian process regression,MMD-Bayes: Robust Bayesian estimation via maximum mean discrepancy,arxiv-html
+Robust and conjugate Gaussian process regression,"Asymptotic normality, concentration, and coverage of generalized posteriors",openalex; arxiv-html
+Robust and conjugate Gaussian process regression,An optimization-centric view on Bayes' rule: Reviewing and generalizing variational inference,arxiv-html
+Robust and conjugate Gaussian process regression,General Bayesian loss function selection and the use of improper models,openalex; arxiv-html
+Robust and conjugate Gaussian process regression,Generalized variational inference in function spaces: Gaussian measures meet Bayesian deep learning,openalex; arxiv-html
+Robust and conjugate Gaussian process regression,Robust Bayesian inference for simulator-based models via the MMD posterior bootstrap,openalex; arxiv-html
+Robust and conjugate Gaussian process regression,Robust generalised Bayesian inference for intractable likelihoods,openalex; arxiv-html
+Robust and conjugate Gaussian process regression,A comparison of learning rate selection methods in generalized Bayesian inference,openalex; arxiv-html
+Robust and conjugate Gaussian process regression,Generalized Bayesian inference for discrete intractable likelihood,openalex; arxiv-html
+Robust and conjugate Gaussian process regression,Martingale posterior distributions,openalex; arxiv-html
+Robust and conjugate Gaussian process regression,Robust and scalable Bayesian online changepoint detection,openalex; arxiv-html
+Robust and conjugate Gaussian process regression,Exact sampling of Gibbs measures with estimated losses,openalex; arxiv-html
+Robust and conjugate Gaussian process regression,Generalized Bayesian likelihood-free inference,openalex; arxiv-html
+Robust and conjugate Gaussian process regression,Outlier-robust Kalman filtering through generalised Bayes,arxiv-html
+User-friendly introduction to PAC-Bayes bounds,A general framework for updating belief distributions,openalex; crossref; arxiv-html
+User-friendly introduction to PAC-Bayes bounds,PAC-Bayesian theory meets Bayesian inference,openalex; crossref; arxiv-html
+User-friendly introduction to PAC-Bayes bounds,"Inconsistency of Bayesian inference for misspecified linear models, and a proposal for repairing it",openalex; crossref; arxiv-html
+User-friendly introduction to PAC-Bayes bounds,Bayesian fractional posteriors,openalex; crossref; arxiv-html
+User-friendly introduction to PAC-Bayes bounds,Calibrating general posterior credible regions,openalex; crossref; arxiv-html
+User-friendly introduction to PAC-Bayes bounds,Concentration of tempered posteriors and of their variational approximations,openalex; crossref; arxiv-html
+User-friendly introduction to PAC-Bayes bounds,Learning under model misspecification: Applications to variational and ensemble methods,openalex; arxiv-html
+User-friendly introduction to PAC-Bayes bounds,An optimization-centric view on Bayes' rule: Reviewing and generalizing variational inference,openalex; arxiv-html
+A Computable Measure of Suboptimality for Entropy-Regularised Variational Objectives,Learning under model misspecification: Applications to variational and ensemble methods,openalex; arxiv-html
+A Computable Measure of Suboptimality for Entropy-Regularised Variational Objectives,MMD-Bayes: Robust Bayesian estimation via maximum mean discrepancy,arxiv-html
+A Computable Measure of Suboptimality for Entropy-Regularised Variational Objectives,An optimization-centric view on Bayes' rule: Reviewing and generalizing variational inference,arxiv-html
+A Computable Measure of Suboptimality for Entropy-Regularised Variational Objectives,PACm-Bayes: Narrowing the empirical risk gap in the misspecified Bayesian regime,arxiv-html
+A Computable Measure of Suboptimality for Entropy-Regularised Variational Objectives,A rigorous link between deep ensembles and (variational) Bayesian methods,arxiv-html
+A Computable Measure of Suboptimality for Entropy-Regularised Variational Objectives,Generalized Bayesian inference for discrete intractable likelihood,openalex; arxiv-html
+A Computable Measure of Suboptimality for Entropy-Regularised Variational Objectives,Prediction-Centric Uncertainty Quantification via MMD,arxiv-html
+A Computable Measure of Suboptimality for Entropy-Regularised Variational Objectives,Predictively oriented posteriors,openalex; arxiv-html
+A Computable Measure of Suboptimality for Entropy-Regularised Variational Objectives,Predictive variational inference: Learn the predictively optimal posterior distribution,arxiv-html
+Bayesian Quantile Estimation and Regression with Martingale Posteriors,A general framework for updating belief distributions,openalex; crossref; arxiv-html
+Bayesian Quantile Estimation and Regression with Martingale Posteriors,On recursive Bayesian predictive distributions,openalex; crossref; arxiv-html
+Bayesian Quantile Estimation and Regression with Martingale Posteriors,Scalable nonparametric sampling from multimodal posteriors with the posterior bootstrap,openalex; arxiv-html
+Bayesian Quantile Estimation and Regression with Martingale Posteriors,Quasi-Bayes properties of a procedure for sequential learning in mixture models,openalex; crossref; arxiv-html
+Bayesian Quantile Estimation and Regression with Martingale Posteriors,Martingale posterior distributions,openalex; crossref; arxiv-html
+Bayesian Quantile Estimation and Regression with Martingale Posteriors,Prediction-based uncertainty quantification for exchangeable sequences,openalex; crossref; arxiv-html
+Bayesian Quantile Estimation and Regression with Martingale Posteriors,Statistical inference with exchangeability and martingales,openalex; crossref; arxiv-html
+Conjugate Generalized Bayesian Inference for Discrete Doubly Intractable Problems,A general framework for updating belief distributions,openalex
+Conjugate Generalized Bayesian Inference for Discrete Doubly Intractable Problems,Robust Bayes estimation using the density power divergence,openalex
+Conjugate Generalized Bayesian Inference for Discrete Doubly Intractable Problems,Principles of Bayesian inference using general divergence criteria,openalex
+Conjugate Generalized Bayesian Inference for Discrete Doubly Intractable Problems,Calibrating general posterior credible regions,openalex
+Conjugate Generalized Bayesian Inference for Discrete Doubly Intractable Problems,Robust Bayesian inference via coarsening,openalex
+Conjugate Generalized Bayesian Inference for Discrete Doubly Intractable Problems,"Asymptotic normality, concentration, and coverage of generalized posteriors",openalex
+Conjugate Generalized Bayesian Inference for Discrete Doubly Intractable Problems,General Bayesian loss function selection and the use of improper models,openalex
+Conjugate Generalized Bayesian Inference for Discrete Doubly Intractable Problems,Robust generalised Bayesian inference for intractable likelihoods,openalex
+Moment Martingale Posteriors for Semiparametric Predictive Bayes,Nonparametric learning from Bayesian models with randomized objective functions,openalex; arxiv-html
+Moment Martingale Posteriors for Semiparametric Predictive Bayes,On recursive Bayesian predictive distributions,openalex; arxiv-html
+Moment Martingale Posteriors for Semiparametric Predictive Bayes,Scalable nonparametric sampling from multimodal posteriors with the posterior bootstrap,openalex; arxiv-html
+Moment Martingale Posteriors for Semiparametric Predictive Bayes,Quasi-Bayes properties of a procedure for sequential learning in mixture models,openalex; arxiv-html
+Moment Martingale Posteriors for Semiparametric Predictive Bayes,Robust Bayesian inference for simulator-based models via the MMD posterior bootstrap,openalex; arxiv-html
+Moment Martingale Posteriors for Semiparametric Predictive Bayes,Martingale posterior distributions,openalex; arxiv-html
+Moment Martingale Posteriors for Semiparametric Predictive Bayes,Martingale posterior neural processes,arxiv-html
+Moment Martingale Posteriors for Semiparametric Predictive Bayes,Statistical inference with exchangeability and martingales,openalex; arxiv-html
+Moment Martingale Posteriors for Semiparametric Predictive Bayes,Bayesian Quantile Estimation and Regression with Martingale Posteriors,openalex; arxiv-html
+Moment Martingale Posteriors for Semiparametric Predictive Bayes,Asymptotics for a class of parametric martingale posteriors,openalex; arxiv-html
+Prediction-Centric Uncertainty Quantification via MMD,A general framework for updating belief distributions,openalex; arxiv-html
+Prediction-Centric Uncertainty Quantification via MMD,Robust Bayes estimation using the density power divergence,openalex; arxiv-html
+Prediction-Centric Uncertainty Quantification via MMD,Learning under model misspecification: Applications to variational and ensemble methods,openalex; arxiv-html
+Prediction-Centric Uncertainty Quantification via MMD,MMD-Bayes: Robust Bayesian estimation via maximum mean discrepancy,arxiv-html
+Prediction-Centric Uncertainty Quantification via MMD,"Asymptotic normality, concentration, and coverage of generalized posteriors",openalex; arxiv-html
+Prediction-Centric Uncertainty Quantification via MMD,Adversarial interpretation of Bayesian inference,arxiv-html
+Prediction-Centric Uncertainty Quantification via MMD,An optimization-centric view on Bayes' rule: Reviewing and generalizing variational inference,arxiv-html
+Prediction-Centric Uncertainty Quantification via MMD,PACm-Bayes: Narrowing the empirical risk gap in the misspecified Bayesian regime,arxiv-html
+Prediction-Centric Uncertainty Quantification via MMD,Robust Bayesian inference for simulator-based models via the MMD posterior bootstrap,openalex; arxiv-html
+Prediction-Centric Uncertainty Quantification via MMD,Robust generalised Bayesian inference for intractable likelihoods,openalex; arxiv-html
+Prediction-Centric Uncertainty Quantification via MMD,A comparison of learning rate selection methods in generalized Bayesian inference,openalex; arxiv-html
+Prediction-Centric Uncertainty Quantification via MMD,A rigorous link between deep ensembles and (variational) Bayesian methods,openalex; arxiv-html
+Prediction-Centric Uncertainty Quantification via MMD,Generalized Bayesian inference for discrete intractable likelihood,openalex; arxiv-html
+Prediction-Centric Uncertainty Quantification via MMD,Martingale posterior distributions,openalex; arxiv-html
+Prediction-Centric Uncertainty Quantification via MMD,Robust and scalable Bayesian online changepoint detection,openalex; arxiv-html
+Prediction-Centric Uncertainty Quantification via MMD,Exact sampling of Gibbs measures with estimated losses,openalex; arxiv-html
+Prediction-Centric Uncertainty Quantification via MMD,Outlier-robust Kalman filtering through generalised Bayes,arxiv-html
+Prediction-Centric Uncertainty Quantification via MMD,Robust and conjugate Gaussian process regression,arxiv-html
+Prediction-Centric Uncertainty Quantification via MMD,Predictive performance of power posteriors,openalex; arxiv-html
+Predictive performance of power posteriors,A general framework for updating belief distributions,openalex; crossref; arxiv-html
+Predictive performance of power posteriors,Assigning a value to a power likelihood in a general Bayesian model,openalex; crossref; arxiv-html
+Predictive performance of power posteriors,"Inconsistency of Bayesian inference for misspecified linear models, and a proposal for repairing it",openalex; crossref; arxiv-html
+Predictive performance of power posteriors,Principles of Bayesian inference using general divergence criteria,openalex; crossref; arxiv-html
+Predictive performance of power posteriors,Bayesian fractional posteriors,openalex; crossref; arxiv-html
+Predictive performance of power posteriors,Calibrating general posterior credible regions,openalex; crossref; arxiv-html
+Predictive performance of power posteriors,General Bayesian updating and the loss-likelihood bootstrap,openalex; crossref; arxiv-html
+Predictive performance of power posteriors,Robust Bayesian inference via coarsening,openalex; crossref; arxiv-html
+Predictive performance of power posteriors,Focused Bayesian prediction,openalex; crossref; arxiv-html
+Predictive performance of power posteriors,An optimization-centric view on Bayes' rule: Reviewing and generalizing variational inference,crossref; arxiv-html
+Predictive performance of power posteriors,"Direct Gibbs posterior inference on risk minimizers: construction, concentration, and calibration",openalex; arxiv-html
+Predictive performance of power posteriors,Robust generalised Bayesian inference for intractable likelihoods,openalex; crossref; arxiv-html
+Predictive performance of power posteriors,A comparison of learning rate selection methods in generalized Bayesian inference,openalex; crossref; arxiv-html
+Predictive performance of power posteriors,Generalized Bayesian inference for discrete intractable likelihood,openalex; crossref; arxiv-html
+Predictive performance of power posteriors,Martingale posterior distributions,openalex; crossref; arxiv-html
+Predictive performance of power posteriors,Robust and scalable Bayesian online changepoint detection,openalex; arxiv-html
+Predictive performance of power posteriors,Robust and conjugate Gaussian process regression,arxiv-html
+Predictively oriented posteriors,A general framework for updating belief distributions,openalex; arxiv-html
+Predictively oriented posteriors,"Inconsistency of Bayesian inference for misspecified linear models, and a proposal for repairing it",openalex; arxiv-html
+Predictively oriented posteriors,Principles of Bayesian inference using general divergence criteria,openalex; arxiv-html
+Predictively oriented posteriors,Calibrating general posterior credible regions,openalex; arxiv-html
+Predictively oriented posteriors,General Bayesian updating and the loss-likelihood bootstrap,openalex; arxiv-html
+Predictively oriented posteriors,Learning under model misspecification: Applications to variational and ensemble methods,openalex; arxiv-html
+Predictively oriented posteriors,MMD-Bayes: Robust Bayesian estimation via maximum mean discrepancy,arxiv-html
+Predictively oriented posteriors,Quasi-Bayes properties of a procedure for sequential learning in mixture models,openalex; arxiv-html
+Predictively oriented posteriors,An optimization-centric view on Bayes' rule: Reviewing and generalizing variational inference,arxiv-html
+Predictively oriented posteriors,"Direct Gibbs posterior inference on risk minimizers: construction, concentration, and calibration",openalex; arxiv-html
+Predictively oriented posteriors,PACm-Bayes: Narrowing the empirical risk gap in the misspecified Bayesian regime,arxiv-html
+Predictively oriented posteriors,Robust Bayesian inference for simulator-based models via the MMD posterior bootstrap,openalex; arxiv-html
+Predictively oriented posteriors,Robust generalised Bayesian inference for intractable likelihoods,openalex; arxiv-html
+Predictively oriented posteriors,A rigorous link between deep ensembles and (variational) Bayesian methods,openalex; arxiv-html
+Predictively oriented posteriors,Generalized Bayesian inference for discrete intractable likelihood,openalex
+Predictively oriented posteriors,Martingale posterior distributions,openalex; arxiv-html
+Predictively oriented posteriors,Prediction-based uncertainty quantification for exchangeable sequences,openalex; arxiv-html
+Predictively oriented posteriors,Robust and scalable Bayesian online changepoint detection,openalex; arxiv-html
+Predictively oriented posteriors,Exact sampling of Gibbs measures with estimated losses,openalex; arxiv-html
+Predictively oriented posteriors,Outlier-robust Kalman filtering through generalised Bayes,arxiv-html
+Predictively oriented posteriors,Robust and conjugate Gaussian process regression,openalex; arxiv-html
+Predictively oriented posteriors,User-friendly introduction to PAC-Bayes bounds,openalex; arxiv-html
+Predictively oriented posteriors,A Computable Measure of Suboptimality for Entropy-Regularised Variational Objectives,openalex; arxiv-html
+Predictively oriented posteriors,Prediction-Centric Uncertainty Quantification via MMD,arxiv-html
+Predictively oriented posteriors,Predictive performance of power posteriors,openalex; arxiv-html
+Predictively oriented posteriors,Robust and conjugate spatio-temporal Gaussian processes,openalex; arxiv-html
+Predictively oriented posteriors,Predictive variational inference: Learn the predictively optimal posterior distribution,openalex; arxiv-html
+Robust and conjugate spatio-temporal Gaussian processes,A general framework for updating belief distributions,openalex; arxiv-html
+Robust and conjugate spatio-temporal Gaussian processes,Robust Bayes estimation using the density power divergence,openalex; arxiv-html
+Robust and conjugate spatio-temporal Gaussian processes,Principles of Bayesian inference using general divergence criteria,openalex; arxiv-html
+Robust and conjugate spatio-temporal Gaussian processes,An optimization-centric view on Bayes' rule: Reviewing and generalizing variational inference,arxiv-html
+Robust and conjugate spatio-temporal Gaussian processes,Robust generalised Bayesian inference for intractable likelihoods,openalex; arxiv-html
+Robust and conjugate spatio-temporal Gaussian processes,A comparison of learning rate selection methods in generalized Bayesian inference,openalex; arxiv-html
+Robust and conjugate spatio-temporal Gaussian processes,Generalized Bayesian inference for discrete intractable likelihood,openalex; arxiv-html
+Robust and conjugate spatio-temporal Gaussian processes,Robust and scalable Bayesian online changepoint detection,openalex; arxiv-html
+Robust and conjugate spatio-temporal Gaussian processes,Outlier-robust Kalman filtering through generalised Bayes,arxiv-html
+Robust and conjugate spatio-temporal Gaussian processes,Robust and conjugate Gaussian process regression,arxiv-html
+Robust and conjugate spatio-temporal Gaussian processes,Robustifying likelihoods by optimistically re-weighting data,openalex; arxiv-html
+Robustifying likelihoods by optimistically re-weighting data,Robust Bayesian inference via coarsening,openalex; crossref
+Robustifying likelihoods by optimistically re-weighting data,MMD-Bayes: Robust Bayesian estimation via maximum mean discrepancy,openalex; crossref
+Semiparametric posterior corrections,A general framework for updating belief distributions,openalex; arxiv-html
+Semiparametric posterior corrections,Concentration of tempered posteriors and of their variational approximations,openalex; crossref
+Semiparametric posterior corrections,Martingale posterior distributions,openalex; arxiv-html
+A Distributional Optimisation Perspective on Combining Models in Deep Learning,A Computable Measure of Suboptimality for Entropy-Regularised Variational Objectives,openalex; arxiv-html
+An Unscented PrO Kalman Filter,A general framework for updating belief distributions,openalex; arxiv-html
+An Unscented PrO Kalman Filter,Learning under model misspecification: Applications to variational and ensemble methods,arxiv-html
+An Unscented PrO Kalman Filter,"Asymptotic normality, concentration, and coverage of generalized posteriors",openalex; arxiv-html
+An Unscented PrO Kalman Filter,An optimization-centric view on Bayes' rule: Reviewing and generalizing variational inference,arxiv-html
+An Unscented PrO Kalman Filter,PACm-Bayes: Narrowing the empirical risk gap in the misspecified Bayesian regime,arxiv-html
+An Unscented PrO Kalman Filter,Outlier-robust Kalman filtering through generalised Bayes,arxiv-html
+An Unscented PrO Kalman Filter,A Computable Measure of Suboptimality for Entropy-Regularised Variational Objectives,openalex; arxiv-html
+An Unscented PrO Kalman Filter,Prediction-Centric Uncertainty Quantification via MMD,arxiv-html
+An Unscented PrO Kalman Filter,Predictively oriented posteriors,openalex; arxiv-html
+An Unscented PrO Kalman Filter,Predictive variational inference: Learn the predictively optimal posterior distribution,arxiv-html
+An Unscented PrO Kalman Filter,Predictively-Oriented Kalman Filtering,arxiv-html
+Asymptotics for a class of parametric martingale posteriors,A general framework for updating belief distributions,openalex; crossref; arxiv-html
+Asymptotics for a class of parametric martingale posteriors,Assigning a value to a power likelihood in a general Bayesian model,openalex; crossref; arxiv-html
+Asymptotics for a class of parametric martingale posteriors,General Bayesian updating and the loss-likelihood bootstrap,openalex; crossref; arxiv-html
+Asymptotics for a class of parametric martingale posteriors,Quasi-Bayes properties of a procedure for sequential learning in mixture models,openalex; crossref; arxiv-html
+Asymptotics for a class of parametric martingale posteriors,An optimization-centric view on Bayes' rule: Reviewing and generalizing variational inference,crossref; arxiv-html
+Asymptotics for a class of parametric martingale posteriors,Martingale posterior distributions,openalex; crossref; arxiv-html
+Asymptotics for a class of parametric martingale posteriors,Prediction-based uncertainty quantification for exchangeable sequences,openalex; crossref; arxiv-html
+Asymptotics for a class of parametric martingale posteriors,Statistical inference with exchangeability and martingales,openalex; crossref; arxiv-html
+Asymptotics for a class of parametric martingale posteriors,Bayesian Quantile Estimation and Regression with Martingale Posteriors,openalex; crossref; arxiv-html
+Bagged Martingale Posteriors: Calibrated Uncertainty Quantification for Predictive Resampling,A general framework for updating belief distributions,openalex
+Bagged Martingale Posteriors: Calibrated Uncertainty Quantification for Predictive Resampling,Quasi-Bayes properties of a procedure for sequential learning in mixture models,openalex
+Bagged Martingale Posteriors: Calibrated Uncertainty Quantification for Predictive Resampling,Martingale posterior distributions,openalex
+Bagged Martingale Posteriors: Calibrated Uncertainty Quantification for Predictive Resampling,Prediction-based uncertainty quantification for exchangeable sequences,openalex
+Bagged Martingale Posteriors: Calibrated Uncertainty Quantification for Predictive Resampling,Statistical inference with exchangeability and martingales,openalex
+Bagged Martingale Posteriors: Calibrated Uncertainty Quantification for Predictive Resampling,Bayesian Quantile Estimation and Regression with Martingale Posteriors,openalex
+Bagged Martingale Posteriors: Calibrated Uncertainty Quantification for Predictive Resampling,Asymptotics for a class of parametric martingale posteriors,openalex
+Bagged Martingale Posteriors: Calibrated Uncertainty Quantification for Predictive Resampling,On the design distribution for predictive Bayesian regression,openalex
+Bagged Martingale Posteriors: Calibrated Uncertainty Quantification for Predictive Resampling,TabMGP: Martingale Posterior with TabPFN,openalex
+From Bayes' Rule to Bayes Rules: Optimal Information Processing and Axiomatic Foundations Beyond Probability,A general framework for updating belief distributions,openalex
+From Bayes' Rule to Bayes Rules: Optimal Information Processing and Axiomatic Foundations Beyond Probability,"Inconsistency of Bayesian inference for misspecified linear models, and a proposal for repairing it",openalex
+From Bayes' Rule to Bayes Rules: Optimal Information Processing and Axiomatic Foundations Beyond Probability,Principles of Bayesian inference using general divergence criteria,openalex
+From Bayes' Rule to Bayes Rules: Optimal Information Processing and Axiomatic Foundations Beyond Probability,Calibrating general posterior credible regions,openalex
+From Bayes' Rule to Bayes Rules: Optimal Information Processing and Axiomatic Foundations Beyond Probability,General Bayesian updating and the loss-likelihood bootstrap,openalex
+From Drift to Coherence: Stabilizing Beliefs in LLMs,Martingale posterior distributions,openalex
+Markov chain Monte Carlo for predictively oriented posteriors,A general framework for updating belief distributions,openalex; arxiv-html
+Markov chain Monte Carlo for predictively oriented posteriors,Assigning a value to a power likelihood in a general Bayesian model,openalex; arxiv-html
+Markov chain Monte Carlo for predictively oriented posteriors,"Inconsistency of Bayesian inference for misspecified linear models, and a proposal for repairing it",openalex; arxiv-html
+Markov chain Monte Carlo for predictively oriented posteriors,Doubly robust Bayesian inference for non-stationary streaming data with β-divergences,openalex
+Markov chain Monte Carlo for predictively oriented posteriors,Principles of Bayesian inference using general divergence criteria,openalex; arxiv-html
+Markov chain Monte Carlo for predictively oriented posteriors,Calibrating general posterior credible regions,openalex; arxiv-html
+Markov chain Monte Carlo for predictively oriented posteriors,Concentration of tempered posteriors and of their variational approximations,openalex; arxiv-html
+Markov chain Monte Carlo for predictively oriented posteriors,Learning under model misspecification: Applications to variational and ensemble methods,openalex; arxiv-html
+Markov chain Monte Carlo for predictively oriented posteriors,MMD-Bayes: Robust Bayesian estimation via maximum mean discrepancy,openalex; arxiv-html
+Markov chain Monte Carlo for predictively oriented posteriors,"Asymptotic normality, concentration, and coverage of generalized posteriors",openalex; arxiv-html
+Markov chain Monte Carlo for predictively oriented posteriors,An optimization-centric view on Bayes' rule: Reviewing and generalizing variational inference,arxiv-html
+Markov chain Monte Carlo for predictively oriented posteriors,PACm-Bayes: Narrowing the empirical risk gap in the misspecified Bayesian regime,arxiv-html
+Markov chain Monte Carlo for predictively oriented posteriors,Robust generalised Bayesian inference for intractable likelihoods,openalex; arxiv-html
+Markov chain Monte Carlo for predictively oriented posteriors,Generalized Bayesian inference for discrete intractable likelihood,openalex; arxiv-html
+Markov chain Monte Carlo for predictively oriented posteriors,Robust and scalable Bayesian online changepoint detection,arxiv-html
+Markov chain Monte Carlo for predictively oriented posteriors,Robust and conjugate Gaussian process regression,arxiv-html
+Markov chain Monte Carlo for predictively oriented posteriors,User-friendly introduction to PAC-Bayes bounds,openalex; arxiv-html
+Markov chain Monte Carlo for predictively oriented posteriors,A Computable Measure of Suboptimality for Entropy-Regularised Variational Objectives,openalex; arxiv-html
+Markov chain Monte Carlo for predictively oriented posteriors,Prediction-Centric Uncertainty Quantification via MMD,arxiv-html
+Markov chain Monte Carlo for predictively oriented posteriors,Predictive performance of power posteriors,openalex; arxiv-html
+Markov chain Monte Carlo for predictively oriented posteriors,Predictively oriented posteriors,openalex; arxiv-html
+Markov chain Monte Carlo for predictively oriented posteriors,Predictive variational inference: Learn the predictively optimal posterior distribution,openalex; arxiv-html
+Martingale Posterior Cox Processes,On recursive Bayesian predictive distributions,openalex
+Martingale Posterior Cox Processes,Quasi-Bayes properties of a procedure for sequential learning in mixture models,openalex
+Martingale Posterior Cox Processes,Martingale posterior distributions,openalex
+Martingale Posterior Cox Processes,Bayesian Quantile Estimation and Regression with Martingale Posteriors,openalex
+On the design distribution for predictive Bayesian regression,Quasi-Bayes properties of a procedure for sequential learning in mixture models,openalex; arxiv-html
+On the design distribution for predictive Bayesian regression,Martingale posterior distributions,openalex; arxiv-html
+On the design distribution for predictive Bayesian regression,Statistical inference with exchangeability and martingales,openalex; arxiv-html
+On the design distribution for predictive Bayesian regression,Bayesian Quantile Estimation and Regression with Martingale Posteriors,openalex; arxiv-html
+On the design distribution for predictive Bayesian regression,Asymptotics for a class of parametric martingale posteriors,openalex; arxiv-html
+Outlier-Robust Multi-Output Gaussian Processes,A general framework for updating belief distributions,openalex
+Outlier-Robust Multi-Output Gaussian Processes,Robust Bayes estimation using the density power divergence,openalex
+Outlier-Robust Multi-Output Gaussian Processes,General Bayesian loss function selection and the use of improper models,openalex
+Outlier-Robust Multi-Output Gaussian Processes,Robust Bayesian inference for simulator-based models via the MMD posterior bootstrap,openalex
+Outlier-Robust Multi-Output Gaussian Processes,Robust generalised Bayesian inference for intractable likelihoods,openalex
+Outlier-Robust Multi-Output Gaussian Processes,A comparison of learning rate selection methods in generalized Bayesian inference,openalex
+Outlier-Robust Multi-Output Gaussian Processes,A rigorous link between deep ensembles and (variational) Bayesian methods,openalex
+Outlier-Robust Multi-Output Gaussian Processes,Generalized Bayesian inference for discrete intractable likelihood,openalex
+Outlier-Robust Multi-Output Gaussian Processes,Martingale posterior distributions,openalex
+Outlier-Robust Multi-Output Gaussian Processes,Robust and scalable Bayesian online changepoint detection,openalex
+Outlier-Robust Multi-Output Gaussian Processes,Predictive performance of power posteriors,openalex
+Outlier-Robust Multi-Output Gaussian Processes,Robust and conjugate spatio-temporal Gaussian processes,openalex
+Overcoming Model Misspecification in Bayesian Inference of Molecular Signalling Networks,A general framework for updating belief distributions,openalex; arxiv-html
+Overcoming Model Misspecification in Bayesian Inference of Molecular Signalling Networks,Learning under model misspecification: Applications to variational and ensemble methods,openalex; arxiv-html
+Overcoming Model Misspecification in Bayesian Inference of Molecular Signalling Networks,"Asymptotic normality, concentration, and coverage of generalized posteriors",openalex; arxiv-html
+Overcoming Model Misspecification in Bayesian Inference of Molecular Signalling Networks,An optimization-centric view on Bayes' rule: Reviewing and generalizing variational inference,arxiv-html
+Overcoming Model Misspecification in Bayesian Inference of Molecular Signalling Networks,A Computable Measure of Suboptimality for Entropy-Regularised Variational Objectives,openalex; arxiv-html
+Overcoming Model Misspecification in Bayesian Inference of Molecular Signalling Networks,Prediction-Centric Uncertainty Quantification via MMD,arxiv-html
+Overcoming Model Misspecification in Bayesian Inference of Molecular Signalling Networks,Predictively oriented posteriors,openalex; arxiv-html
+Overcoming Model Misspecification in Bayesian Inference of Molecular Signalling Networks,Predictive variational inference: Learn the predictively optimal posterior distribution,arxiv-html
+Predictive variational inference: Learn the predictively optimal posterior distribution,A general framework for updating belief distributions,openalex
+Predictive variational inference: Learn the predictively optimal posterior distribution,"Inconsistency of Bayesian inference for misspecified linear models, and a proposal for repairing it",openalex
+Predictive variational inference: Learn the predictively optimal posterior distribution,Learning under model misspecification: Applications to variational and ensemble methods,openalex
+Predictive variational inference: Learn the predictively optimal posterior distribution,Robust generalised Bayesian inference for intractable likelihoods,openalex
+Predictive variational inference: Learn the predictively optimal posterior distribution,Martingale posterior distributions,openalex
+Predictively Oriented Gaussian Process Posteriors,A general framework for updating belief distributions,openalex; arxiv-html
+Predictively Oriented Gaussian Process Posteriors,Principles of Bayesian inference using general divergence criteria,openalex; arxiv-html
+Predictively Oriented Gaussian Process Posteriors,An optimization-centric view on Bayes' rule: Reviewing and generalizing variational inference,arxiv-html
+Predictively Oriented Gaussian Process Posteriors,Generalized variational inference in function spaces: Gaussian measures meet Bayesian deep learning,openalex; arxiv-html
+Predictively Oriented Gaussian Process Posteriors,Robust and conjugate Gaussian process regression,arxiv-html
+Predictively Oriented Gaussian Process Posteriors,Prediction-Centric Uncertainty Quantification via MMD,arxiv-html
+Predictively Oriented Gaussian Process Posteriors,Predictively oriented posteriors,openalex; arxiv-html
+Predictively Oriented Gaussian Process Posteriors,Robust and conjugate spatio-temporal Gaussian processes,arxiv-html
+Predictively Oriented Gaussian Process Posteriors,Markov chain Monte Carlo for predictively oriented posteriors,openalex; arxiv-html
+Predictively Oriented Gaussian Process Posteriors,Outlier-Robust Multi-Output Gaussian Processes,openalex; arxiv-html
+Predictively Oriented Gaussian Process Posteriors,Predictive variational inference: Learn the predictively optimal posterior distribution,arxiv-html
+Predictively-Oriented Kalman Filtering,A general framework for updating belief distributions,openalex; arxiv-html
+Predictively-Oriented Kalman Filtering,Learning under model misspecification: Applications to variational and ensemble methods,arxiv-html
+Predictively-Oriented Kalman Filtering,"Asymptotic normality, concentration, and coverage of generalized posteriors",openalex; arxiv-html
+Predictively-Oriented Kalman Filtering,An optimization-centric view on Bayes' rule: Reviewing and generalizing variational inference,arxiv-html
+Predictively-Oriented Kalman Filtering,PACm-Bayes: Narrowing the empirical risk gap in the misspecified Bayesian regime,arxiv-html
+Predictively-Oriented Kalman Filtering,Outlier-robust Kalman filtering through generalised Bayes,arxiv-html
+Predictively-Oriented Kalman Filtering,A Computable Measure of Suboptimality for Entropy-Regularised Variational Objectives,openalex; arxiv-html
+Predictively-Oriented Kalman Filtering,Prediction-Centric Uncertainty Quantification via MMD,arxiv-html
+Predictively-Oriented Kalman Filtering,Predictively oriented posteriors,openalex; arxiv-html
+Predictively-Oriented Kalman Filtering,Predictive variational inference: Learn the predictively optimal posterior distribution,openalex; arxiv-html
+Recursive moment updates for scalable Bayesian nonparametric regression,On recursive Bayesian predictive distributions,openalex
+Recursive moment updates for scalable Bayesian nonparametric regression,Quasi-Bayes properties of a procedure for sequential learning in mixture models,openalex
+Recursive moment updates for scalable Bayesian nonparametric regression,Martingale posterior distributions,openalex
+Recursive moment updates for scalable Bayesian nonparametric regression,Bayesian Quantile Estimation and Regression with Martingale Posteriors,openalex
+Recursive moment updates for scalable Bayesian nonparametric regression,Moment Martingale Posteriors for Semiparametric Predictive Bayes,openalex
+Recursive moment updates for scalable Bayesian nonparametric regression,On the design distribution for predictive Bayesian regression,openalex
+Recursive moment updates for scalable Bayesian nonparametric regression,Outlier-Robust Multi-Output Gaussian Processes,openalex
+Robust Bayesian Optimisation with Unbounded Corruptions,A general framework for updating belief distributions,openalex
+Robust Bayesian Optimisation with Unbounded Corruptions,Robust Bayes estimation using the density power divergence,openalex
+Robust Bayesian Optimisation with Unbounded Corruptions,Robust Bayesian inference for simulator-based models via the MMD posterior bootstrap,openalex
+Robust Bayesian Optimisation with Unbounded Corruptions,Robust generalised Bayesian inference for intractable likelihoods,openalex
+Robust Bayesian Optimisation with Unbounded Corruptions,A rigorous link between deep ensembles and (variational) Bayesian methods,openalex
+Robust Bayesian Optimisation with Unbounded Corruptions,Generalized Bayesian inference for discrete intractable likelihood,openalex
+Robust Bayesian Optimisation with Unbounded Corruptions,Exact sampling of Gibbs measures with estimated losses,openalex
+Robust Bayesian Optimisation with Unbounded Corruptions,Robust and conjugate Gaussian process regression,openalex
+Robust Bayesian Optimisation with Unbounded Corruptions,Predictive performance of power posteriors,openalex
+Robust Bayesian Optimisation with Unbounded Corruptions,Robust and conjugate spatio-temporal Gaussian processes,openalex
+Soft Specialists: $α$-Rényi Ensembles for Uncertainty-Aware LLM Post-Training,A general framework for updating belief distributions,openalex; arxiv-html
+Soft Specialists: $α$-Rényi Ensembles for Uncertainty-Aware LLM Post-Training,"Inconsistency of Bayesian inference for misspecified linear models, and a proposal for repairing it",openalex; arxiv-html
+Soft Specialists: $α$-Rényi Ensembles for Uncertainty-Aware LLM Post-Training,Bayesian fractional posteriors,openalex; arxiv-html
+Soft Specialists: $α$-Rényi Ensembles for Uncertainty-Aware LLM Post-Training,Learning under model misspecification: Applications to variational and ensemble methods,openalex; arxiv-html
+Soft Specialists: $α$-Rényi Ensembles for Uncertainty-Aware LLM Post-Training,An optimization-centric view on Bayes' rule: Reviewing and generalizing variational inference,arxiv-html
+Soft Specialists: $α$-Rényi Ensembles for Uncertainty-Aware LLM Post-Training,"Direct Gibbs posterior inference on risk minimizers: construction, concentration, and calibration",openalex; arxiv-html
+Soft Specialists: $α$-Rényi Ensembles for Uncertainty-Aware LLM Post-Training,A rigorous link between deep ensembles and (variational) Bayesian methods,openalex; arxiv-html
+Soft Specialists: $α$-Rényi Ensembles for Uncertainty-Aware LLM Post-Training,Predictively oriented posteriors,openalex; arxiv-html
+Soft Specialists: $α$-Rényi Ensembles for Uncertainty-Aware LLM Post-Training,Predictive variational inference: Learn the predictively optimal posterior distribution,openalex; arxiv-html
+TabMGP: Martingale Posterior with TabPFN,A general framework for updating belief distributions,openalex; arxiv-html
+TabMGP: Martingale Posterior with TabPFN,On recursive Bayesian predictive distributions,openalex; arxiv-html
+TabMGP: Martingale Posterior with TabPFN,Quasi-Bayes properties of a procedure for sequential learning in mixture models,openalex; arxiv-html
+TabMGP: Martingale Posterior with TabPFN,An optimization-centric view on Bayes' rule: Reviewing and generalizing variational inference,arxiv-html
+TabMGP: Martingale Posterior with TabPFN,Robust Bayesian inference for simulator-based models via the MMD posterior bootstrap,openalex; arxiv-html
+TabMGP: Martingale Posterior with TabPFN,A comparison of learning rate selection methods in generalized Bayesian inference,openalex; arxiv-html
+TabMGP: Martingale Posterior with TabPFN,A rigorous link between deep ensembles and (variational) Bayesian methods,openalex; arxiv-html
+TabMGP: Martingale Posterior with TabPFN,Martingale posterior distributions,openalex; arxiv-html
+TabMGP: Martingale Posterior with TabPFN,Martingale posterior neural processes,arxiv-html
+TabMGP: Martingale Posterior with TabPFN,Statistical inference with exchangeability and martingales,openalex; arxiv-html
+TabMGP: Martingale Posterior with TabPFN,Bayesian Quantile Estimation and Regression with Martingale Posteriors,openalex; arxiv-html
+TabMGP: Martingale Posterior with TabPFN,Prediction-Centric Uncertainty Quantification via MMD,arxiv-html
+TabMGP: Martingale Posterior with TabPFN,Asymptotics for a class of parametric martingale posteriors,openalex; arxiv-html

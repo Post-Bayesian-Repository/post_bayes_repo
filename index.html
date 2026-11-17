@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Post-Bayesian Repository</title>
-  <meta name="description" content="A curated, searchable list of papers on post-Bayesian inference: generalised Bayes, predictively oriented posteriors, martingale posteriors and PAC-Bayes.">
+  <meta name="description" content="A curated, searchable list of papers on post-Bayesian inference (generalised Bayes, predictively oriented posteriors, martingale posteriors) and related PAC-Bayes theory.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
@@ -16,6 +16,7 @@
       <a class="brand" href="index.html">Post-Bayesian Repository</a>
       <div class="nav-links">
         <a href="index.html" class="active">Papers</a>
+        <a href="graph.html">Graph</a>
         <a href="background.html">Background</a>
         <a href="resources.html">Resources</a>
         <a href="about.html">About</a>
@@ -28,13 +29,14 @@
       <div class="intro-text">
         <h1>Post-Bayesian Repository</h1>
         <p>
-          A curated list of papers on <strong>post-Bayesian inference</strong>: methods that quantify uncertainty
-          much as a Bayesian would, but without relying on Bayes' rule and its assumptions. They are typically used
-          when the model is misspecified, the prior is a default rather than a genuine belief, the posterior is too
-          costly to compute, or prediction rather than parameter recovery is the goal.
+          A curated list of papers on <strong>post-Bayesian inference</strong>: methods that, like Bayesian inference,
+          produce a distribution over parameters or predictions, but use an update rule other than Bayes' rule. They are
+          typically motivated by misspecified models or priors, posteriors that are costly to compute, or a focus on
+          prediction. The list covers work from 2016 onwards; earlier precedents are listed on the
+          <a href="about.html#precedents">About</a> page.
         </p>
         <p>
-          Papers are tagged by class and contribution style. Search by title, author or venue, use the filters to
+          Papers are tagged by topic and contribution style. Search by title, author or venue, use the filters to
           narrow the list, and click a column header to sort. Clicking a tag filters the table by it.
           New to the area? Start with the <a href="background.html">Background</a> page.
         </p>
@@ -59,7 +61,7 @@
         <div id="discover"><p class="muted">Loading…</p></div>
       </section>
       <section class="panel" aria-labelledby="notices-title">
-        <h2 id="notices-title">Notice board</h2>
+        <h2 id="notices-title">Notice Board</h2>
         <p class="panel-sub">Upcoming events, workshops and courses.</p>
         <ul id="notices" class="notices"><li class="muted">Loading…</li></ul>
       </section>
@@ -72,7 +74,7 @@
           <input id="search" type="search" placeholder="Title, author, venue…  (press / to focus)" autocomplete="off">
         </div>
         <div>
-          <label for="f-class">Post-Bayesian class</label>
+          <label for="f-class">Topic</label>
           <select id="f-class"></select>
         </div>
         <div>
@@ -105,6 +107,7 @@
   </main>
 
   <footer>Post-Bayesian Repository · maintained on <a href="https://github.com/Post-Bayesian-Repository/post_bayes_repo">GitHub</a></footer>
+  <script src="assets/common.js"></script>
   <script src="assets/papers.js"></script>
 </body>
 </html>

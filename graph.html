@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Citation Graph · Post-Bayesian Repository</title>
+  <meta name="description" content="Citation graph of the papers in the Post-Bayesian Repository, coloured by topic, with a BibTeX entry for every paper.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="inner">
+      <a class="brand" href="index.html">Post-Bayesian Repository</a>
+      <div class="nav-links">
+        <a href="index.html">Papers</a>
+        <a href="graph.html" class="active">Graph</a>
+        <a href="background.html">Background</a>
+        <a href="resources.html">Resources</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="graph-page">
+    <h1>Citation Graph</h1>
+    <p class="graph-lede">
+      Each circle is a paper in the repository, coloured by its topic (a second topic is shown as the outline).
+      An arrow from A to B means A cites B; only citations between papers in the repository are drawn, and larger circles are cited more
+      often within it. Hover over a paper for its title, or click it for details, links and a BibTeX entry.
+    </p>
+
+    <div class="graph-controls">
+      <fieldset class="legend">
+        <legend>Show Topics</legend>
+        <div id="legend" class="legend-items"></div>
+      </fieldset>
+      <div class="graph-options">
+        <div>
+          <label for="jump">Find a paper</label>
+          <select id="jump"><option value="">Choose a paper…</option></select>
+        </div>
+        <div>
+          <label for="layout">Layout</label>
+          <select id="layout">
+            <option value="time">By year</option>
+            <option value="force">By citation</option>
+          </select>
+        </div>
+        <label class="check"><input type="checkbox" id="hide-isolated"> Hide papers without links</label>
+      </div>
+    </div>
+
+    <div class="graph-layout">
+      <div class="graph-box" id="graph-box">
+        <svg id="graph" role="group" aria-label="Citation graph of the repository papers"></svg>
+        <div class="graph-tip" id="tip" hidden></div>
+        <div class="zoom-btns">
+          <button type="button" class="btn btn-sm" id="zoom-in" aria-label="Zoom in">+</button>
+          <button type="button" class="btn btn-sm" id="zoom-out" aria-label="Zoom out">−</button>
+          <button type="button" class="btn btn-sm" id="zoom-reset">Reset</button>
+        </div>
+        <p class="graph-msg muted" id="graph-msg">Loading…</p>
+      </div>
+      <aside class="panel details" id="details" aria-live="polite">
+        <p class="muted">Click a paper in the graph, or choose one above, to see its details and BibTeX.</p>
+      </aside>
+    </div>
+
+    <p class="graph-foot muted" id="graph-foot"></p>
+  </main>
+
+  <footer>Post-Bayesian Repository · maintained on <a href="https://github.com/Post-Bayesian-Repository/post_bayes_repo">GitHub</a></footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js" crossorigin="anonymous"></script>
+  <script src="assets/common.js"></script>
+  <script src="assets/graph.js"></script>
+</body>
+</html>
